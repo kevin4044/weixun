@@ -1,0 +1,180 @@
+@charset "utf-8";
+*{
+	padding:0px;
+	margin:0px;
+}
+body {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px;
+	background:url(../images/top_bg.jpg) repeat-x;
+}
+ul,li {
+	list-style:none;
+}
+a {
+	color:#333;
+	text-decoration:none;
+	outline:none;
+	_hide-focus:expression(this.hideFocus=true);
+}
+a:hover {
+	color:#369;
+	text-decoration:none;
+}
+.head {
+	width:100%;
+	height:134px;
+	z-index:8;
+	position:relative;
+	background:url(../images/top_bg.jpg) repeat-x;
+}
+.head .top {
+	height:134px;
+	width:100%;
+	overflow:hidden;
+	background:url(../images/header.jpg) no-repeat left top;
+}
+.head .top_right {
+	width:20px;
+	height:32px;
+	position:absolute;
+	z-index:10;
+	overflow:hidden;
+	right:0;
+	bottom:0;
+	background:url(../images/top_right.png) no-repeat;
+}
+.top_over {
+	width:100%;
+	height:93px;
+	overflow:hidden;
+	float:left;
+}
+.top_logo {
+	width:200px;
+	height:93px;
+	float:left;
+	overflow:hidden;
+}
+.top_logo a {
+	width:200px;
+	height:90px;
+	float:left;
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.top_box {
+	width:792px;
+	height:93px;
+	float:right;
+	overflow:hidden;
+}
+.top_info {
+	width:100%;
+	height:64px;
+	float:left;
+	overflow:hidden;
+}
+.top_info_right {
+	height:64px;
+	float:right;
+	overflow:hidden;
+}
+.top_welcome {
+	height:25px;
+	line-height:25px;
+	float:left;
+	overflow:hidden;
+	margin-top:20px;
+	color:#FFF;
+	display:inline;
+	margin-right:15px;
+}
+.top_welcome span {
+	color:#5ae35a;
+	font-weight:bold;
+}
+.top_ico {
+	height:64px;
+	float:left;
+	overflow:hidden;
+}
+.top_ico li {
+	width:83px;
+	height:64px;
+	float:left;
+	overflow:hidden;
+}
+.top_ico li a {
+	width:79px;
+	height:20px;
+	line-height:20px;
+	float:left;
+	display:block;
+	text-align:center;
+	padding:41px 0px 3px 4px;
+	color:#FFF;
+}
+.top_ico li a:hover {
+
+}
+.top_ico li.ico_index {
+	background:url(../images/top_ico.png) no-repeat 0px 0px;
+}
+.top_ico li.ico_user {
+	background:url(../images/top_ico.png) no-repeat -83px 0px;
+}
+.top_ico li.ico_help {
+	background:url(../images/top_ico.png) no-repeat -166px 0px;
+}
+.top_ico li.ico_exit {
+	background:url(../images/top_ico.png) no-repeat right 0px;
+}
+.top_menu {
+	width:792px;
+	height:29px;
+	float:left;
+	overflow:hidden;
+}
+.top_menu ul {
+	height:29px;
+	float:right;
+	overflow:hidden;
+}
+.top_menu ul li {
+	width:94px;
+	height:29px;
+	text-align:center;
+	float:left;
+	overflow:hidden;
+	display:inline;
+	margin-left:5px;
+	background:url(../images/nav_bg.png) no-repeat;
+}
+.top_menu ul li a {
+	width:70px;
+	height:25px;
+	line-height:24px;
+	float:left;
+	display:block;
+	overflow:hidden;
+	padding:4px 0px 0px 24px;
+	color:#FFF;
+}
+.top_menu ul li a:hover {
+
+}
+
+
+
+
+
+.ico1{ background:url(../images/top_ico2.png) no-repeat 0 0;}
+.ico2{ background:url(../images/top_ico2.png) no-repeat 0 -29px;}
+.ico3{ background:url(../images/top_ico2.png) no-repeat 0 -58px;}
+.ico4{ background:url(../images/top_ico2.png) no-repeat 0 -87px;}
+.ico5{ background:url(../images/top_ico2.png) no-repeat 0 -116px;}
+.ico6{ background:url(../images/top_ico2.png) no-repeat 0 -145px;}
+.ico7{ background:url(../images/top_ico2.png) no-repeat 0 -174px;}
+.ico8{ background:url(../images/top_ico2.png) no-repeat 0 -203px;}

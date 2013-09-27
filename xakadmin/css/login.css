@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:url(images/login_bg.jpg) repeat-x #e9e9e9;
+	color:#333;}
+*{
+	padding:0px;
+	margin:0px;
+}
+img{
+	border:none;
+}
+a{
+	color:#333333;
+	text-decoration:none;
+	outline:none;
+	_hide-focus: expression(this.hideFocus=true);
+}
+a:hover{
+    color:#dd7917;
+ 	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+li{
+	list-style:none;
+}
+.clear{
+	clear:both;}
+	
+.login_bg{
+	width:100%;
+	margin:0 auto;
+	background:url(../images/login_main.jpg) no-repeat center top;}
+.login_main{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+	background:url(../images/login_main.jpg) no-repeat center top;}	
+.header{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;}	
+.header .logo{
+	width:250px;
+	height:80px;
+	float:left;
+	overflow:hidden;
+	margin-top:30px;}
+.header .top_link{
+	width:500px;
+	height:25px;
+	line-height:25px;
+	float:right;
+	overflow:hidden;
+	text-align:right;
+	margin-top:10px;}
+.header .top_link a{
+	margin:0px 3px;}
+.main_box{
+	width:268px;
+	height:220px;
+	float:left;
+	overflow:hidden;
+	display:inline;
+	margin:159px 275px 0px 385px;
+	padding:0px 0px 41px 32px;
+	}
+.main_box li{
+	width:265px;
+	height:25px;
+	float:left;
+	overflow:hidden;
+	margin-top:4px;}
+.main_box li.login_user input,.main_box li.login_pass input,.main_box li.login_code input{
+	width:255px;
+	height:25px;
+	line-height:25px;
+	float:left;
+	overflow:hidden;
+	border:0px solid #CCC;
+	font-size:14px;
+	background:none;}
+.main_box li.login_user,.main_box li.login_pass,.main_box li.login_code{
+	width:255px;
+	display:inline;
+	margin-left:5px;}
+.main_box li.login_pass{
+	margin-top:32px;}
+.main_box li.login_code{
+	margin-top:29px;
+	height:30px;
+	}
+.main_box li.login_code input{
+	width:80px;
+	text-transform:uppercase;
+	}
+.main_box li.login_code img{
+	width:80px;
+	height:30px;
+	margin-left:35px;
+	vertical-align:middle;
+	cursor:pointer;
+	}
+.main_box li.login_code a{
+	margin-left:5px;}
+.main_box li.login_submit{
+	height:48px;
+	margin-top:23px;}
+.main_box li.login_submit input{
+	width:156px;
+	height:48px;
+	float:left;
+	overflow:hidden;
+	border:0px solid #CCC;
+	cursor:pointer;
+	background:none;
+	outline:none;}
+
+.footer{
+	width:100%;
+	float:left;
+	height:20px;
+	line-height:20px;
+	margin-top:15px;
+	padding-bottom:15px;
+	text-align:center;}
+
+

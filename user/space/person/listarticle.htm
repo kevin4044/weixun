@@ -1,0 +1,39 @@
+{xak:include file='header.htm'/}
+<div class="wrapper mT10">
+  <div class="west">
+  {xak:include file='side_icon.htm'/}
+	{xak:include file='side_class.htm'/}
+	{xak:include file='side_visitor.htm'/}
+	{xak:include file='side_search.htm'/}
+  </div>
+  <div class="east">
+    <dl class="border">
+      <dt class="caption"><strong>文章</strong></dt>
+      <dd class="body">
+{xak:datalist}
+        <div class="mp10 dashed">
+          <div class="mB10">
+          <h3 class="fLeft"><a href="index.php?uid={xak:var.userid_e /}&action=viewarchives&aid={xak:field.id/}">{xak:field.title/}</a></h3>
+          <span class="mL5 aGray">({xak:field.pubdate function="MyDate('Y-m-d h:i',@me)"/})</span>
+          </div>
+          <p class="f14 aBlack lh22">{xak:field.description /}</p>
+          <div id="artInfo"><strong class="fLeft"><a href="index.php?uid={xak:var.userid_e /}&action=viewarchives&aid={xak:field.id/}" target="_blank" title="点击查看全文">点击查看全文</a></strong>
+            <ul class="fRight fLeftChild overflow">
+              <li><a href="index.php?uid={xak:var.userid_e /}&action=viewarchives&aid={xak:field.id/}" target="_blank" title="{xak:field.title/}">浏览</a>({xak:field.click/})</li>
+              <li><a href="{xak:global.cfg_phpurl/}/feedback.php?aid={xak:field.id/}" target="_blank">评论</a>({xak:field.scores/})</li>
+              <li><a href="{xak:global.cfg_phpurl/}/feedback.php?aid={xak:field.id/}" target="_blank">好评</a>({xak:field.goodpost/})</li>
+              <li><a href="{xak:global.cfg_phpurl/}/feedback.php?aid={xak:field.id/}" target="_blank">差评</a>({xak:field.badpost/})</li>
+            </ul>
+          </div>
+          <div class="clearfix pB10"></div>
+        </div>
+{/xak:datalist}
+        <div class="fRight mTB10 pd10">{xak:pagelist /}</div>
+        <div class="clearfix"></div>
+      </dd>
+    </dl>
+  </div>
+</div>
+{xak:include file='footer.htm'/}
+</body>
+</html>

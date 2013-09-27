@@ -1,0 +1,9 @@
+会员信息调用标签
+>>xak>>
+{xak:memberlist orderby='scores' row='20'}
+<a href="../user/index.php?uid={xak:field.userid /}">{xak:field.userid /}</a>
+<span>{xak:field.scores /}</span>
+{/xak:memberlist}
+>>xak>>
+orderby = 'scores' 按积分排序
+row = '6' 调用数目

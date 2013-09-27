@@ -1,0 +1,5 @@
+单页文档调用标签
+>>xak>>
+{xak:likespage row=''/}
+>>xak>>
+row = '' 调用条数

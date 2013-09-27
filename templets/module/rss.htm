@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="{xak:global.cfg_soft_lang /}" ?>
+<rss version="2.0">
+<channel>
+<title>{xak:field name='typename'/}</title>
+<link>{xak:field name='typelink'/}</link>
+<description>{xak:field name='title' function='html2text(@me)'/}</description>
+<language>zh-cn</language>
+<generator><![CDATA[{xak:field name='powerby'/}]]></generator>
+<webmaster>{xak:field name='adminemail'/}</webmaster>
+{xak:rssitem}
+<item>
+    <title><![CDATA[[field:title/]]]></title>
+    <link>[field:fullurl/]</link>
+    <description><![CDATA[[field:description function='html2text(@me)'/]]]></description>
+    <pubDate>[field:stime/]</pubDate>
+    <category>[field:typename/]</category>
+    <author>[field:writer/]</author>
+    <comments>[field:source/]</comments>
+</item>
+{/xak:rssitem}
+</channel>
+</rss>

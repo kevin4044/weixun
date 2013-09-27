@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>增加广告</title>
+<link href='css/base.css' rel='stylesheet' type='text/css'>
+<script language="javascript" src="../functions/xakajax2.js"></script>
+<script language='javascript' src='js/main.js'></script>
+<script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script language="javascript">
+function checkSubmit()
+{
+	if(document.form1.tagname.value=="")
+	{
+		alert("广告标识不能为空！");
+		document.form1.tagname.focus();
+		return false;
+	}
+}
+</script>
+<style type="text/css">
+<!--
+input{zoom:expression(function(ele){}(this));}
+-->
+</style>
+</head>
+<body background='images/allbg.gif' leftmargin='8' topmargin='8'>
+<form action="rpad_add.php" method="post" name="form1" onSubmit="return checkSubmit()">
+	<input type='hidden' name='dopost' value='save'>
+	<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#BFD8E0">
+		<tr>
+			<td height="24" background="images/tbg.gif">&nbsp;<b><a href="rpad_main.php"><u>广告管理</u></a></b> &gt;&gt; 增加广告</td>
+		</tr>
+		<tr>
+			<td bgcolor="#FFFFFF" valign="top"><table width="100%" border="0" cellspacing="4" cellpadding="4">
+					<tr>
+						<td height="25" colspan="3">广告代码的调用方法：{xak:rpad name='广告位标识'/} </td>
+					</tr>
+					<tr>
+						<td height="25" align="right">广告位标识：</td>
+						<td colspan="2"><input name="tagname" type="text" id="tagname" class='iptxt' />
+							（使用英文或数字表示的简洁标识）</td>
+					</tr>
+					<tr>
+						<td height="25" align="right">广告投放范围：</td>
+						<td colspan="2">
+                            <?php
+                                $tl = new TypeLink(0);
+                                $typeOptions = $tl->GetOptionArray(0,0,0);
+                                echo "<select name='typeid' style='width:300px'>\r\n";
+                                echo "<option value='0' selected>投放在没有同名标识的所有栏目</option>\r\n";
+                                echo $typeOptions;
+                                echo "</select>";
+                            ?>
+							<br>
+							（如果在所选栏目找不到指定标识的广告内容，系统会自动搜索父栏目）</td>
+					</tr>
+					<tr>
+						<td height="25" align="right">广告位名称：</td>
+						<td colspan="2"><input name="adname" type="text" id="adname" size="30" class='iptxt' /></td>
+					</tr>
+					<tr>
+						<td height="25" align="right">时间限制：</td>
+						<td colspan="2"><input name="timeset" type="radio" class="np" value="0" checked='1' />
+							<label for="notimelimit">永不过期</label>
+							<input type="radio" name="timeset" class="np" value="1" />
+							<label for="timelimit">在设内时间内有效</label></td>
+					</tr>
+					<tr>
+						<td height="25" align="right">开始时间：</td>
+						<td colspan="2"><input name="starttime" type="text" id="starttime" value="<?php echo $startDay?>" class='iptxt'/>
+                         <script language="javascript" type="text/javascript">
+						Calendar.setup({
+							inputField     :    "starttime",
+							ifFormat       :    "%Y-%m-%d %H:%M",
+							showsTime      :    true,
+							timeFormat     :    "24"
+						});
+				 </script></td>
+					</tr>
+					<tr>
+						<td height="25" align="right">结束时间：</td>
+						<td colspan="2"><input name="endtime" type="text" id="endtime" value="<?php echo $endDay?>" class='iptxt'/>
+                        <script language="javascript" type="text/javascript">
+						Calendar.setup({
+							inputField     :    "endtime",
+							ifFormat       :    "%Y-%m-%d %H:%M",
+							showsTime      :    true,
+							timeFormat     :    "24"
+						});
+				 </script>
+                        </td>
+					</tr>
+					<tr>
+						<td width="15%" height="25" align="right">展现方式：</td>
+						<td width="75%"><select id="adstyle" name="adtype" onChange="showcode(this.options[this.selectedIndex].value)">
+								<option value="code" selected>代码</option>
+								<option value="slide">幻灯片</option>
+								<option value="text" >文字</option>
+								<option value="image" >图片</option>
+								<option value="flash" >Flash</option>
+							</select></td>
+						<td width="10%">&nbsp;</td>
+					</tr>
+                    <tr>
+						<td height="25" align="right">广告内容：</td>
+						<td colspan="2">&nbsp;</td>
+					</tr>                    
+					<tr>
+                    	<td width="15%">&nbsp;</td>
+						<td id="content" colspan="2" align="left">
+                            <dd id="code" style="display:none;float:left; width:100%;">
+                                <table width="100%" cellpadding="0" cellspacing="0"  class="i_table">
+                                    <tr>			
+                                        <td>
+                                            <?php
+                                            GetEditor("htmlcode","","200","Default","print","false");
+                                            ?>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd id="text" style="display:none;float:left; width:100%;">
+                                <table width="100%" cellpadding="3" cellspacing="0"  class="i_table">
+                                    <tr>
+                                        <td class="b" width="70"><b>文字内容</b></td>
+                                        <td class="b"><input type="text" size="60" name="text[title]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>文字链接</b></td>
+                                        <td class="b"><input type="text" size="60" name="text[link]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>文字颜色</b></td>
+                                        <td class="b"><input type="text" size="10" name="text[color]" value="" class='iptxt'/> (例如:red,#EF8684)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>文字大小</b></td>
+                                        <td class="b"><input type="text" size="10" name="text[size]" value="" class='iptxt'/> (例如:4px,12px)</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd id="image" style="display:none;float:left; width:100%;">
+                                <table width="100%" cellpadding="3" cellspacing="0"  class="i_table">
+                                    <tr>
+                                        <td class="b" width="70"><b>图片地址</b></td>
+                                        <td class="b">
+                                            <input id="imageurl" type="text" size="40" name="image[url]" value="" class='iptxt'/>
+                                            <input type="button" onClick="SelectImage('form1.imageurl','big')" value="浏览..." class="inputbut" name="imageurl_bt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>图片链接</b></td>
+                                        <td class="b"><input type="text" size="40" name="image[link]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>图片宽度</b></td>
+                                        <td class="b"><input type="text" size="10" name="image[width]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>图片高度</b></td>
+                                        <td class="b"><input type="text" size="10" name="image[height]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>图片描述</b></td>
+                                        <td class="b"><input type="text" size="40" name="image[descrip]" value="" class='iptxt'/></td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd id="flash" style="display:none;float:left; width:100%;">
+                                <table width="100%" cellpadding="3" cellspacing="0"  class="i_table">
+                                    <tr>
+                                        <td class="b" width="70"><b>Flash地址</b></td>
+                                        <td class="b">
+                                            <input id="flashurl" type="text" size="40" name="flash[link]" value="" class='iptxt'/>
+                                            <input type="button" onClick="SelectFlash()" value="浏览..." class="inputbut" name="flashurl_bt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>Flash宽度</b></td>
+                                        <td class="b"><input type="text" size="40" name="flash[width]" value="" class='iptxt'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>Flash高度</b></td>
+                                        <td class="b"><input type="text" size="40" name="flash[height]" value="" class='iptxt'/></td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd id="slide" style="display:none;float:left; width:100%;">
+                                <table width="100%" cellpadding="3" cellspacing="0"  class="i_table">
+                                    <tr>
+                                        <td class="b" width="70"><b>幻灯片宽度</b></td>
+                                        <td class="b"><input type="text" size="40" name="slide[width]" value="" class='iptxt'/></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>幻灯片高度</b></td>
+                                        <td class="b"><input type="text" size="40" name="slide[height]" value="" class='iptxt'/></td>
+                                    </tr>
+                                </table>
+                                <?php for($i=0;$i<7;$i++){
+                                ?>
+                                <table width="100%" cellpadding="3" cellspacing="0"  class="i_table">
+                                    <tr>
+                                        <td class="b" width="70"><b>图片<?php echo $i+1;?></b></td>
+                                        <td class="b" width="300"><input type="text" id="slidePic<?php echo $i;?>" size="40" name="slide[pic][<?php echo $i;?>]" value="" class='iptxt'/></td>
+                                        <td class="b"><input type="button" onClick="SelectImage('form1.slidePic<?php echo $i;?>','big')" value="浏览..." class="inputbut" name="slidePic_bt<?php echo $i;?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>链接<?php echo $i+1;?></b></td>
+                                        <td class="b"><input type="text" size="40" name="slide[link][<?php echo $i;?>]" value="" class='iptxt'/></td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b"><b>标题<?php echo $i+1;?></b></td>
+                                        <td class="b"><input type="text" size="40" name="slide[text][<?php echo $i;?>]" value="" class='iptxt'/></td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <?php }?>
+                                
+                            </dd>
+                        </td>						
+					</tr>
+                    <tr>
+						<td height="25" align="right">过期显示内容：</td>
+						<td colspan="2">&nbsp;</td>
+					</tr>                    
+					<tr>
+                    	<td>&nbsp;</td>
+                        <td colspan="2">
+                            <?php
+                                GetEditor("expbody","","200","Default","print","false");
+                            ?>
+                        </td>
+          			</tr>
+					<tr>
+						<td height="53" align="center">&nbsp;</td>
+						<td colspan="2"><input name="imageField" type="image" src="images/button_ok.gif" border="0" class="np" /></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table>
+</form>
+<script language="JavaScript">
+function showcode(idName){
+	$('#content dd').css('display','none');
+	$('#'+idName).css('display','block');
+}
+showcode('code');
+</script>
+</body>
+</html>

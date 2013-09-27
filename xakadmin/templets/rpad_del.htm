@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+<title>确认删除广告</title>
+<link href='css/base.css' rel='stylesheet' type='text/css'>
+<script language="javascript" src="../functions/xakajax2.js"></script>
+<script language='javascript' src='js/main.js'></script>
+<script language="javascript">
+function checkSubmit()
+{
+	if(document.form1.okdel.value=="")
+	{
+		alert("删除确认码不能为空！");
+		document.form1.okdel.focus();
+		return false;
+	}
+}
+</script>
+</head>
+<body background='images/allbg.gif' leftmargin='8' topmargin='8'>
+<form action="rpad_edit.php" method="post" name="form1" onSubmit="return checkSubmit()">
+	<input type='hidden' name='dopost' value='delete'>
+    <input type='hidden' name='aid' value="<?php echo $aid; ?>">
+	<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#D1DDAA">
+		<tr>
+			<td height="28" background="images/tbg.gif">&nbsp;<b><a href="rpad_main.php"><u>广告管理</u></a></b> &gt;&gt; 确认删除广告</td>
+		</tr>
+        <tr>
+			<td height="28" bgcolor="#FFFFFF">&nbsp;<strong style="color:#F00">删除广告位会导致您前台页面的广告无法显示,你确定要删除吗?</strong></td>
+		</tr>
+        <tr>
+			<td height="28" bgcolor="#FFFFFF">&nbsp;确认删除请在下面文本框输入&nbsp; <strong style="color:#F00">xak.cn</strong></td>
+		</tr>
+        <tr>
+			<td height="28" bgcolor="#FFFFFF">&nbsp;<input name="okdel" type="text"  size="30" class='iptxt' value="" /></td>
+		</tr>
+       <tr>
+            <td height="28" bgcolor="#FFFFFF"><input name="imageField" type="image" src="images/button_ok.gif" border="0" class="np" /></td>
+	   </tr>
+	</table>
+</form>
+</body>
+</html>

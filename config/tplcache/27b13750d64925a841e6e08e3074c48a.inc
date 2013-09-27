@@ -1,0 +1,1 @@
+<li><a href="[field:typelink/]">讲师风采</a></li>

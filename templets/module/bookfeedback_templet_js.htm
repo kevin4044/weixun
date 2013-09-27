@@ -1,0 +1,39 @@
+<?php
+require_once(XAKINC."/common.func.php");
+?>
+{xak:config pagesize='5'/}
+{xak:datalist}
+<?php
+  if($fields['userid']!='') $spaceurl = $cfg_basehost.'/user/index.php?uid='.$fields['userid'];
+  else $spaceurl = "#";
+  if($fields['username']=='匿名') $spaceurl = "#";
+  $fields['bgimg'] = 'cmt-neu.gif';
+  $fields['ftypetitle'] = '该用户表示中立';
+  if($fields['ftype']=='bad') {
+  	$fields['bgimg'] = 'cmt-bad.gif';
+  	$fields['ftypetitle'] = '该用户表示差评';
+  }
+  else if($fields['ftype']=='good') {
+  	$fields['bgimg'] = 'cmt-good.gif';
+  	$fields['ftypetitle'] = '该用户表示好评';
+  }
+?>
+document.write("<div class='decmt-box'>");
+document.write("<div class='decmt-title'>");
+document.write("<span class='moodico'><img src='{xak:global.cfg_templeturl/}/images/mood/ico-mood-<?php if($fields['face']>0) echo $fields['face'];?>.gif'/></span>");
+document.write("<span class='username'><a href='<?php echo $spaceurl;?>'>{xak:field.username/}</a></span>");
+document.write("<span class='date'>{xak:field.dtime function=GetDateMk(@me)/}</span>");
+document.write("<span>发表</span>");
+document.write("</div>");
+document.write("<div class='decmt-act'>");
+document.write("<span id='goodfb{xak:field.id/}'><a href=#goodfb{xak:field.id/} onclick=postBadGood('goodfb',{xak:field.id/})>支持</a>[{xak:field.good/}]</span>");
+document.write("<span id='badfb{xak:field.id/}'><a href=#badfb{xak:field.id/} onclick=postBadGood('badfb',{xak:field.id/})>反对</a>[{xak:field.bad/}]</span>");
+document.write("<span><a href='/module/bookfeedback.php?fid={xak:field.id/}&action=quote'>引用</a></span>");
+document.write("</div>");
+document.write("<div class='decmt-content'>{xak:field.msg function=jstrim(@me,100)/}<img src='{xak:global.cfg_templeturl/}/images/{xak:field.bgimg/}' alt='{xak:field.ftypetitle/}' />");
+document.write("</div>");
+document.write("</div>");
+{/xak:datalist}
+
+
+

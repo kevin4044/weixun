@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}"/>
+    <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
+    <meta name="author" content="http://www.xak.cn"/>
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+{xak:include filename="head.htm"/}
+<div class="main">
+<div class="weizhi">您现在所在外置：{xak:field name='position'/}</div>
+<div class="leftt">
+    <div class="gongkaike">
+        <div class="shang">
+            <div class="kecheng">{xak:field.typename/}</div>
+        </div>
+        <div class="zhong">
+            <div class="kee">
+                <ul>
+                    {xak:channel type='son' typeid='1'}
+                    <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                    {/xak:channel}
+                </ul>
+            </div>
+        </div>
+        <div class="di"></div>
+    </div>
+    <div class="zixun">
+        <div class="zixuntop">
+            <div class="xun">最新资讯</div>
+        </div>
+        <div class="zixunzhong">
+            <div class="mdd">
+                <ul>
+                    {xak:arclist typeid='24' row='9'}
+                    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/xak:arclist}
+                </ul>
+            </div>
+            <div class="mo"><a href="#"><img src="/images/common/more.jpg" alt="" /></a></div>
+        </div>
+        <div class="zixundi"></div>
+    </div>
+    <div class="jian">
+        <div class="ts">
+            <div class="kecheng">课程推荐</div>
+        </div>
+        <div class="tz">
+            <div class="mdd">
+                <ul>
+                    {xak:arclist flag='c' row='7' orderby='pubdate'}
+                    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/xak:arclist}
+                </ul>
+            </div>
+        </div>
+        <div class="td"></div>
+    </div>
+</div>
+
+<div class="rightt">
+<div class="searcha">
+    <form class="input_search" action="/module/search.php">
+        <input type="text" name="q" value="" class="input_click" />
+        <input type="submit" name="bbshi" value="" class="sebutton" />
+        <input type="hidden" name="kwtype" value="0">
+        <input type="hidden" name="pagesize" value="16">
+    </form>
+</div>
+<div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
+<div class="nn">
+    <div class="kong">
+        <div class="gongtop">
+            <div class="mt"><a href="#">公开课程</a></div>
+
+        </div>
+        <div class="gongzhong">
+            <table class="m-course">
+                <tbody id="list_course" class="m-mee">
+                <tr class="first_row">
+                    <td class="name">课程名称</td>
+                    <td class="time">开课时间</td>
+                    <td class="location">开课地点</td>
+                    <td class="price">价格</td>
+                    <td class="opration">操作</td>
+                </tr>
+                {xak:arclist typeid='1' row='7' orderby='weight' addfields='price,name,start_date,location' channelid='14'}
+                <tr >
+                    <td class="name"><a href="[field:arcurl/]">《[field:name/]》</a></td>
+                    <td class="time">[field:start_date function=MyDate('y-m-d',@me)/]</td>
+                    <td class="location">[field:location /]</td>
+                    <td class="price">￥[field:price/]</td>
+                    <td class="opration"><a href="#"><img src="/images/common/ming.jpg" alt=""/></a></td>
+                </tr>
+                {/xak:arclist}
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="gongdi"></div>
+    </div>
+
+    <tr>
+        <td height="30" colspan="2" style="line-height:10px;">&nbsp;</td>
+    </tr>
+
+
+    <div class="kong">
+        <div class="gongtop">
+            <div class="mt"><a href="#">企业内训</a></div>
+
+        </div>
+        <div class="gongzhong">
+            <table class="m-course">
+                <tbody id="list_course" class="m-mee">
+                <tr class="first_row">
+                    <td class="name">课程名称</td>
+                    <td class="time">开课时间</td>
+                    <td class="location">开课地点</td>
+                    <td class="price">价格</td>
+                    <td class="opration">操作</td>
+                </tr>
+                {xak:arclist typeid='2' row='7' orderby='weight' addfields='price,name,start_date,location' channelid='14'}
+                <tr >
+                    <td class="name"><a href="[field:arcurl/]">《[field:name/]》</a></td>
+                    <td class="time">[field:start_date function=MyDate('y-m-d',@me)/]</td>
+                    <td class="location">[field:location /]</td>
+                    <td class="price">￥[field:price/]</td>
+                    <td class="opration"><a href="#"><img src="/images/common/ming.jpg" alt=""/></a></td>
+                </tr>
+                {/xak:arclist}
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="gongdi"></div>
+
+
+        <div class="KfMenu">
+            <div class="KfTop ie6_png"></div>
+        </div>
+
+    </div>
+</div>
+</div>
+    <div class="you">
+        <div class="youtop">
+            <div class="qin">友情链接</div>
+        </div>
+        <div class="youzhong">
+            <div class="mgg">
+                <ul>
+                    {xak:flink row='24'/}
+                </ul>
+            </div>
+        </div>
+        <div class="youdi"></div>
+    </div>
+</div>
+{xak:include filename="footer.htm"/}
+</body>
+</html>

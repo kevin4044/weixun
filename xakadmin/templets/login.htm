@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>卓睿创想网站管理系统 V5.0</title>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="../functions/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript">
+$ = jQuery;
+function changeAuthCode() {
+	var num = 	new Date().getTime();
+	var rand = Math.round(Math.random() * 10000);
+	num = num + rand;
+	$('#ver_code').css('visibility','visible');
+	if ($("#vdimgck")[0]) {
+		$("#vdimgck")[0].src = "../functions/vdimgck.php?tag=" + num;
+	}
+	return false;	
+}
+</script>
+</head>
+<body>
+<div class="login_bg">
+	<div class="login_main">
+    	<div class="header">
+            <div class="logo">
+                <a href="http://www.xak.cn" target="_blank" title="深圳市卓睿创想科技有限公司"><img src="images/login_logo.jpg" alt="深圳市卓睿创想科技有限公司" /></a>
+            </div>
+            <div class="top_link">
+                <a href="/">网站首页</a>
+                <?php if($open_help){ ?>
+                 | <a href="http://help.xak.cn" target="_blank">帮助中心</a>
+                <?php } ?> 
+            </div>
+        </div>
+        <form name="LoginForm" action="login.php" method="post">
+        <input type="hidden" name="gotopage" value="<?php if(!empty($gotopage)) echo $gotopage;?>" />
+        <input type="hidden" name="dopost" value="login" />
+        <input name='adminstyle' type='hidden' value='newxak' />
+        <div class="main_box">
+        	<ul>
+            	<li class="login_user"><input type="text" name="userid" value="" /></li>
+                <li class="login_pass"><input type="password" name="pwd" value="" /></li>
+                <li class="login_code">
+                    <input type="text" name="validate" value="" /> 
+                    <img src="../functions/vdimgck.php" onclick="this.src=this.src+'?'" alt="看不清？点击更换" id="vdimgck" />
+                    <a href="#" onClick="changeAuthCode();" title="点击更换">看不清？</a>
+                </li>
+                <li class="login_submit"><input type="submit" value="" /></li>
+            </ul>
+        </div>
+        </form>
+        <div class="footer">
+        	Copyright &copy; 2009-2012 <a href="http://www.xak.cn" target="_blank">深圳市卓睿创想科技有限公司</a> 版权所有
+        </div>
+    </div>
+</div>
+</body>
+</html>

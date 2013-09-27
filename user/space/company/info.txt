@@ -1,0 +1,4 @@
+name:蓝色
+author:xak.cn
+type:企业
+date:2009年7月

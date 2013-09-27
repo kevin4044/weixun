@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={xak:global.cfg_soft_lang/}" />
+<title>{xak:channeltitle order='backward' character='_'/}_{xak:global.cfg_webname/}</title>
+<meta name="keywords" content="{xak:field name='keywords'/}" />
+<meta name="description" content="{xak:field name='description' function='html2text(@me)'/}" />
+<link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+<meta name="author" content="http://www.xak.cn" />
+<script src="/templets/style/jquery.min.js"></script>
+<script src="/templets/style/jquery.colorbox.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  //Examples of how to assign the ColorBox event to elements
+	  $(".group1").colorbox({rel:'group1'});
+	  $(".group2").colorbox({rel:'group2', transition:"fade"});
+	  $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+	  $(".group4").colorbox({rel:'group4', slideshow:true});
+	  $(".ajax").colorbox();
+	  $(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+	  $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+	  $(".inline").colorbox({inline:true, width:"50%"});
+	  $(".callbacks").colorbox({
+		  onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+		  onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+		  onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+		  onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+		  onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+	  });
+	  
+	  //Example of preserving a JavaScript event for inline calls.
+	  $("#click").click(function(){ 
+		  $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+		  return false;
+	  });
+  });
+</script>
+</head>
+<body class="articlelist">
+<div id="Coray"> {xak:include filename="head.htm"/}
+    <div id="w830">
+        <div class="w166">
+            <ul class="fnav">
+                {xak:channel type='son' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a></li>"}
+                <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+                {/xak:channel}
+            </ul>
+        </div>
+        <div class="w634">
+            <div class="list_cp">
+                <ul>
+                    {xak:list pagesize='9' orderby='weight'}
+                    <li>
+                        <a class="group1" href="[field:datu/]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a>
+                        <span>[field:title/]</span>
+                    </li>
+                    {/xak:list}
+                </ul>
+            </div>
+            <div class="pages">
+               <ul>
+                  {xak:pagelist listitem="index,end,pre,next,pageno,option" listsize="5"/}
+               </ul>
+            </div>
+        </div>
+    </div>
+    {xak:include filename="footer.htm"/} </div>
+</body>
+</html>

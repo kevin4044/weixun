@@ -1,0 +1,37 @@
+{xak:include file='header.htm'/}
+
+<div id="side" class="left">
+	{xak:include file='side_icon.htm'/}
+	{xak:include file='side_class.htm'/}
+	{xak:include file='side_search.htm'/}
+</div>
+
+<!--begin main-->
+<div id="main" class="right">
+<div class="box">
+	<h2>产品列表</h2>
+	<!--begin-->
+<div class="text">
+	<table class="blog-content">
+	<tr>
+		<td>
+		<div class="listPic listPic-albumn">
+		{xak:datalist titlelen = '20'}
+		<dl>
+			<dd><a href="{xak:field.arcurl/}"><img src='{xak:field.litpic/}'/></dd>
+			<dt><a href="{xak:field.arcurl/}">{xak:field.title/}</a></dt>
+		</dl>
+		{/xak:datalist}
+		</div>
+		<div class="c"></div>
+		</td>
+		</tr>
+	</table>
+</div>
+<div class="big"><div class="pages">{xak:pagelist/}</div></a></span></div>
+<!--end-->
+	</div>
+</div>
+<!--end main-->
+
+{xak:include file='footer.htm'/}

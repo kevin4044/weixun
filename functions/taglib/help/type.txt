@@ -1,0 +1,7 @@
+指定的单个栏目的链接标签
+>>xak>>
+{xak:type}
+<a href="[field:typelink /]">[field:typename /]</a>
+{/xak:type}
+>>xak>>
+typeid='' 指定栏目ID

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>卓睿创想管理系统后台顶部</title>
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function JumpFrame(url1, url2){
+	window.parent.frames['menu-frame'].location=url1;
+	window.parent.frames['main'].location=url2;
+}
+</script>
+</head>
+<body>
+<div class="head">
+  <div class="top">
+  	<div class="top_over">
+        <div class="top_logo">
+            <a href="http://www.xak.cn" target="_blank" title="<?php echo $cfg_softname." ".$cfg_version; ?>"><?php echo $cfg_softname." ".$cfg_version; ?></a>
+        </div>
+        <div class="top_box">
+            <div class="top_info">
+                <div class="top_info_right">
+                    <div class="top_welcome">您好：<span><?php echo $cuserLogin->getUserName(); ?></span>，欢迎使用<?php echo $cfg_softname; ?>！</div>
+                    <div class="top_ico">
+                        <ul>
+                            <li class="ico_index"><a href="../index.php?upcache=1" target="_blank">网站首页</a></li>
+                            <?php if($open_member) { ?>
+                            <li class="ico_user"><a href="../user/index.php" target="_blank">会员中心</a></li>
+                            <?php } ?>
+                            <?php if($open_help) { ?>
+                            <li class="ico_help"><a href="http://help.xak.cn" target="_blank">系统帮助</a></li>
+                            <?php } ?>
+                            <li class="ico_exit"><a href="exit.php">退出系统</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_menu">
+                <ul>
+                    <?php if($open_content){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu2.php','index_body.php');" class="ico1">内容管理</a></li>
+                    <?php } if($open_category){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu3.php','catalog_main.php');" class="ico2">栏目分类</a></li>
+                    <?php } if($open_html){?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu4.php','makehtml_all.php');" class="ico3">网站更新</a></li>
+                    <?php } if($open_templets){?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu5.php','templets_main.php');" class="ico4">界面模板</a></li>
+                    <?php } if($open_collection){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu6.php','co_main.php');" class="ico5">采集管理</a></li>
+                    <?php } if($open_member){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu7.php','member_main.php');" class="ico6">会员管理</a></li>
+                    <?php } if($open_module){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu9.php','mychannel_main.php');" class="ico7">模块配置</a></li>
+                    <?php } if($open_config){ ?>
+                    <li><a href="javascript:void(0)" onclick="JumpFrame('xmenu8.php','sys_info.php');" class="ico8">系统设置</a></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        </div>
+	</div>	  		      
+  </div>
+  <div class="top_right"></div>
+</div>
+<div style="display:none"><script src="http://s22.cnzz.com/stat.php?id=4531434&web_id=4531434" language="JavaScript"></script>
+</div>
+</body>
+</html>

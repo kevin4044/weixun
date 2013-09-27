@@ -1,0 +1,46 @@
+{xak:include file='header.htm' /}
+
+<div id="side" class="left">
+	{xak:include file='side_search.htm' /}
+	{xak:include file='side_class.htm' /}
+	{xak:include file='side_news.htm' /}
+</div>
+
+<!--begin main-->
+<div id="main" class="right">
+
+<div class="box">
+	<h2>公司简介</h2>
+</div>
+<div class="infobox">
+	<div class="introduce">
+		<img src="{xak:var.comface /}" alt="{xak:var.company /}照片" />
+		{xak:var.introduce /}
+	</div>
+	<ul>
+		<li><span>公司名称：</span>{xak:var.company /}</li>
+		<li><span>贸易种类：</span>{xak:var.vocation /}</li>
+		<li><span>主营产品：</span>{xak:var.product /}</li>
+		<li><span>公司规模：</span>{xak:var.cosize /}</li>
+		<li><span>所在地：</span>{xak:var.place /}</li>
+	</ul>
+</div>
+
+<div class="box">
+	<h2>联系方式</h2>
+</div>
+<div class="infobox">
+<ul>
+	<li>联系人：{xak:var.linkman /}</li>
+	<li>电话：{xak:var.tel /}</li>
+	<li>传真：{xak:var.fax /}</li>
+	<li>网址： {xak:var.url /}</li>
+	<li>Email： {xak:var.email /}</li>
+	<li>地址：{xak:var.address /}</li>
+</ul>
+</div>	
+
+</div>
+<!--end main-->
+
+{xak:include file='footer.htm' /}

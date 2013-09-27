@@ -1,0 +1,30 @@
+{xak:include file='header.htm'/}
+<div class="wrapper mT10">
+  <div class="west">
+  {xak:include file='side_icon.htm'/}
+	{xak:include file='side_class.htm'/}
+	{xak:include file='side_search.htm'/}
+  </div>
+  <div class="east">
+    <dl class="border">
+      <dt class="caption"><strong>相册</strong></dt>
+      <dd class="body">
+        <ul id="album">
+        {xak:datalist titlelen='20'}
+          <li>
+            <dl>
+              <dt><a href="{xak:field.arcurl/}"><img src='{xak:field.litpic/}' /></a></dt>
+              <dd class="textCenter" ><strong><a href="{xak:field.arcurl/}">{xak:field.title/}</a></strong></dd>
+            </dl>
+          </li>
+          {/xak:datalist}
+        </ul>
+        <div class="fRight mTB10 pd10">{xak:pagelist/}</div>
+        <div class="clearfix"></div>
+      </dd>
+    </dl>
+  </div>
+</div>
+{xak:include file='footer.htm'/}
+</body>
+</html>

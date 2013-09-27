@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}"/>
+    <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
+    <meta name="author" content="http://www.xak.cn"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+{xak:include filename="head.htm"/}
+<div class="main">
+    <div class="weizhi">您现在所在外置：{xak:field name='position'/}</div>
+    <div class="leftt">
+        <div class="gongkaike">
+            <div class="shang">
+                <div class="kecheng">{xak:field.id function='GetTopInfo(@me,0,0)'/}</div>
+            </div>
+            <div class="zhong">
+                <div class="kee">
+                    <ul>
+                        {xak:channel type='son' }
+                        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                        {/xak:channel}
+                    </ul>
+                </div>
+            </div>
+            <div class="di"></div>
+        </div>
+        <div class="jian">
+            <div class="ts">
+                <div class="kecheng">课程推荐</div>
+            </div>
+            <div class="tz">
+                <div class="mdd">
+                    <ul>
+                        {xak:arclist flag='c' row='7' orderby='pubdate'}
+                        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                        {/xak:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="td"></div>
+        </div>
+    </div>
+
+    <div class="rightt">
+        <div class="searcha">
+            <form class="input_search" action="/module/search.php">
+                <input type="text" name="q" value="" class="input_click" />
+                <input type="submit" name="bbshi" value="" class="sebutton" />
+                <input type="hidden" name="kwtype" value="0">
+                <input type="hidden" name="pagesize" value="16">
+            </form>
+        </div>
+        <div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
+        <div class="nn">
+            {xak:arclist row='7' orderby='weight' addfields='teacher,target,price,name,start_date,end_date,location' channelid='14'}
+            <div class="bao">
+                <div class="ttt"><a href="[field:arcurl/]">讲师：[field:teacher/] 《[field:name/]》</a></div>
+                <div class="kais"></div>
+                <div class="kaiz">
+                    <div class="mqq">
+                        <ul>开课时间：[field:start_date function=MyDate('',@me)/]</ul>
+                        <dl>开课地点：[field:location/]</dl>
+                        <dt>课程价格：￥[field:price/]元</dt>
+                        <br/>
+                        <dd>课程目标：[field:target/]</dd>
+                        <span >状  态：
+                            <b></b>
+                        </span>
+                        <input type="hidden" name='start_date' value="[field:start_date function=MyDate('',@me)/]"/>
+                        <input type="hidden" name='end_date' value="[field:end_date function=MyDate('',@me)/]"/>
+                    </div>
+                    <div class="mingg">
+                        <a href="">
+                            <img src="/images/common/lijibaoming.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="kaid">
+                </div>
+            </div>
+            {/xak:arclist}
+            <div class="pages">
+                <ul>
+                    {xak:pagelist listitem="index,end,pre,next,pageno" listsize="7" sitelang='cn'/}
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $mqqfirst = $('div.mqq:first');
+                for ($mqqfirst; $mqqfirst.next().length>0; $mqqfirst = $mqqfirst.next()) {
+                    console.log($mqqfirst);
+                    console.log($mqqfirst.find('b'));
+                    $mqqfirst.find('b').text(
+                        get_state($mqqfirst.find('input[name=start_date]').attr('value')
+                              , $mqqfirst.find('input[name=end_date]').attr('value'))
+                    );
+                }
+            });
+        </script>
+    </div>
+</div>
+{xak:include filename="footer.htm"/}
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+子栏目调用标签
+>>xak>>
+{xak:sonchannel}
+<a href='[field:typeurl/]'>[field:typename/]</a>
+{/xak:sonchannel}
+>>xak>>
+row ='100' 返回数目
+col = '1'  默认单列显示

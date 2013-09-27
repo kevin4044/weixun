@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>系统菜单</title>
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="../functions/js/xakajax2.js"></script>
+<?php
+    echo "<script language='javascript'>var curopenItem = '$openitem';</script>\r\n";
+?>
+<script language="javascript" type="text/javascript" src="js/leftmenu.js"></script>
+<style>
+div{
+	padding:0px;
+	margin:0px;
+}
+body{
+	padding:0px;
+	margin:0;
+	background-color:#F4FAFD;
+	border-right:solid 1px #ABC3CF;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#ct1{
+	width:150px;
+	float:left;
+	overflow:hidden;
+	}
+
+dl.bitem {
+	padding-left:10px;
+	margin:10px 0px 0px 0px;
+}
+dl.bitem2 {
+	padding-left:10px;
+	margin:10px 0px 0px 0px;
+}
+dl.bitem dt, dl.bitem2 dt {
+	background:url(images/xmenu5.png) no-repeat 0 0;
+	width:138px;
+	height:26px;
+	line-height:26px;
+}
+dl.bitem dt b, dl.bitem2 dt b {
+	color:#fff;
+	font-weight:normal;
+}
+dl dt b{
+	background-image: url(images/xmenu5.png);
+	background-repeat: no-repeat;
+	text-indent:40px;
+	display:block;
+	width:138px;
+	height:26px;
+}
+dl dt b.mbgl{
+	background-position: 0px -26px;
+}
+dl.bitem dd, dl.bitem2 dd {
+
+}
+div.items {
+	clear:both;
+	padding:0px;
+	height:0px;
+}
+.fllct {
+	float:left;
+	width:85px;
+}
+.flrct {
+	padding-top:3px;
+	float:left;
+}
+.sitemu li {
+	padding: 0px 0px 0px 35px;
+	line-height: 30px;
+	background-image: url(images/xmenu5.png);
+	background-repeat: no-repeat;
+	margin-top:5px;
+	overflow:hidden;
+}
+ul {
+	padding-top:3px;
+}
+li {
+	height:22px;
+}
+.mrmbgl{background-position: 0px -104px;}
+.zdyhbj{background-position: 0px -134px;}
+.qjbjcs{background-position: 0px -164px;}
+</style>
+</head>
+<body target="main" onLoad="CheckOpenMenu();">
+<div id='ct1'>
+  <?php
+      GetMenus($cuserLogin->getUserRank(), 'main');
+  ?>
+</div>
+</body>
+</html>

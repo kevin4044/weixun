@@ -1,0 +1,28 @@
+@charset "utf-8";
+*{padding:0px;margin:0px;}
+body{font-family:Verdana,Arial,Helvetica,sans-serif;}
+html,body{width:100%; height:100%;}
+ul,li{list-style:none;}
+
+.left_br{
+	width:9px;
+	height:100%;
+	background:url(../images/left_bg.png) repeat-y;}
+.right_br{
+	width:9px;
+	height:100%;
+	background:url(../images/right_bg.png) repeat-y;}	
+.bottom_br{
+	width:100%;
+	height:9px;
+	background:url(../images/bottom_bg.png) repeat-x;}
+.bottom_left{
+	width:9px;
+	height:9px;
+	background:url(../images/bottom_left.png) repeat-x;
+	float:left;}	
+.bottom_right{
+	width:9px;
+	height:9px;
+	background:url(../images/bottom_right.png) repeat-x;
+	float:right;}	

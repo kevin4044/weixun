@@ -1,0 +1,34 @@
+{xak:include file='header.htm'/}
+
+<div id="side" class="left">
+	{xak:include file='side_search.htm'/}
+	{xak:include file='side_class.htm'/}
+	{xak:include file='side_news.htm'/}
+</div>
+
+<!--begin main-->
+<div id="main" class="right">
+
+<div class="box">
+	<h2>联系我们</h2>
+</div>
+<div class="infobox">
+<ul>
+	<li><span>公司名称：</span>{xak:var.company/}</li>
+	<li><span>贸易种类：</span>{xak:var.vocation/}</li>
+	<li><span>主营产品：</span>{xak:var.product/}</li>
+	<li><span>公司规模：</span>{xak:var.cosize/}</li>
+	<li><span>所在地：</span>{xak:var.place/}</li>
+	<li><span>联系人：</span>{xak:var.linkman/}</li>
+	<li><span>电话：</span>{xak:var.tel/}</li>
+	<li><span>传真：</span>{xak:var.fax/}</li>
+	<li><span>网址：</span>{xak:var.url/}</li>
+	<li><span>Email：</span><a href="mailto:{xak:var.email/}">{xak:var.email/}</a></li>
+	<li><span>地址：</span>{xak:var.address/}</li>
+</ul>
+</div>	
+
+</div>
+<!--end main-->
+
+{xak:include file='footer.htm'/}

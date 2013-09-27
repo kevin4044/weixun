@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",73,98);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",146,175);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",215,241);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",493,527);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("field","",593,621);
+$z[4][4]['name']="position";
+$z[5]=Array("field","",741,762);
+$z[5][4]['name']="typename";
+$z[6]=Array("channel","\r\n                    <li><a href=\"[field:typeurl/]\">[field:typename/]</a></li>\r\n                    ",888,1038);
+$z[6][4]['type']="son";
+$z[6][4]['typeid']="1";
+$z[7]=Array("arclist","\r\n                    <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n                    ",1372,1516);
+$z[7][4]['typeid']="24";
+$z[7][4]['row']="9";
+$z[8]=Array("arclist","\r\n                    <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n                    ",1940,2099);
+$z[8][4]['flag']="c";
+$z[8][4]['row']="7";
+$z[8][4]['orderby']="pubdate";
+$z[9]=Array("arclist","\r\n                <tr >\r\n                    <td class=\"name\"><a href=\"[field:arcurl/]\">《[field:name/]》</a></td>\r\n                    <td class=\"time\">[field:start_date function=MyDate('y-m-d',@me)/]</td>\r\n                    <td class=\"location\">[field:location /]</td>\r\n                    <td class=\"price\">￥[field:price/]</td>\r\n                    <td class=\"opration\"><a href=\"#\"><img src=\"/images/common/ming.jpg\" alt=\"\"/></a></td>\r\n                </tr>\r\n                ",3299,3904);
+$z[9][4]['typeid']="1";
+$z[9][4]['row']="7";
+$z[9][4]['orderby']="weight";
+$z[9][4]['addfields']="price,name,start_date,location";
+$z[9][4]['channelid']="14";
+$z[10]=Array("arclist","\r\n                <tr >\r\n                    <td class=\"name\"><a href=\"[field:arcurl/]\">《[field:name/]》</a></td>\r\n                    <td class=\"time\">[field:start_date function=MyDate('y-m-d',@me)/]</td>\r\n                    <td class=\"location\">[field:location /]</td>\r\n                    <td class=\"price\">￥[field:price/]</td>\r\n                    <td class=\"opration\"><a href=\"#\"><img src=\"/images/common/ming.jpg\" alt=\"\"/></a></td>\r\n                </tr>\r\n                ",4744,5349);
+$z[10][4]['typeid']="2";
+$z[10][4]['row']="7";
+$z[10][4]['orderby']="weight";
+$z[10][4]['addfields']="price,name,start_date,location";
+$z[10][4]['channelid']="14";
+$z[11]=Array("flink","",5805,5826);
+$z[11][4]['row']="24";
+$z[12]=Array("include","",5942,5978);
+$z[12][4]['filename']="footer.htm";
+
+?>

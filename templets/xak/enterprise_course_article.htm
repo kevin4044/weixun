@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}"/>
+    <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
+    <meta name="author" content="http://www.xak.cn"/>
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+{xak:include filename="head.htm"/}
+<div class="main">
+    <div class="weizhi">您现在所在外置：{xak:field name='position'/}</div>
+    <div class="leftt">
+        <div class="gongkaike">
+            <div class="shang">
+                <div class="kecheng">{xak:field.id function='GetTopInfo(@me,0,0)'/}</div>
+            </div>
+            <div class="zhong">
+                <div class="kee">
+                    <ul>
+                        {xak:channel type='son'}
+                        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                        {/xak:channel}
+                    </ul>
+                </div>
+            </div>
+            <div class="di"></div>
+        </div>
+        <div class="jian">
+            <div class="ts">
+                <div class="kecheng">课程推荐</div>
+            </div>
+            <div class="tz">
+                <div class="mdd">
+                    <ul>
+                        {xak:arclist flag='c' row='7' orderby='pubdate'}
+                        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                        {/xak:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="td"></div>
+        </div>
+    </div>
+    <div class="rightt">
+        <div class="searcha">
+            <form class="input_search" action="/module/search.php">
+                <input type="text" name="q" value="" class="input_click" />
+                <input type="submit" name="bbshi" value="" class="sebutton" />
+                <input type="hidden" name="kwtype" value="0">
+                <input type="hidden" name="pagesize" value="16">
+            </form>
+        </div>
+        <div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
+        <div class="nn">
+            <div class="ti">{xak:field.title/}</div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    var start_time =new Date("{xak:field.start_date function='MyDate('',@me)'/}");
+                    var end_time = new Date("{xak:field.end_date function='MyDate('',@me)'/}");
+                    $('span#set_time').text(end_time.getDate() - start_time.getDate());
+                });
+            </script>
+            <div class="kp">
+                <table class="m-course-info">
+                    <tr>
+                        <td>市场价格：{xak:field.price/}元</td>
+                        <td>授课讲师：{xak:field.teacher/}</td>
+                    </tr>
+                    <tr>
+                        <td>开课领域：{xak:field.typename/}</td>
+                        <td>课程类型：{xak:field.id function='GetTopInfo(@me,0,0)'/}</td>
+                    </tr>
+                    <tr>
+                        <!--TODO-->
+                        <td >课程时间：<span id="set_time"></span>天 </td>
+                        <td>开课地区：{xak:field.location/}</td>
+                    </tr>
+                    <tr>
+                        <td>开课日期：{xak:field.start_date function='MyDate('',@me)'/}</td>
+                        <td>结束日期：{xak:field.end_date function='MyDate('',@me)'/}</td>
+                    </tr>
+                    <tr>
+                        <td>联系机构：{xak:field.conntact_org/}</td>
+                        <td>联系信箱：{xak:field.conntact_email/}</td>
+                    </tr>
+                    <tr>
+                        <td>联系电话：{xak:field.conntact_tel/}</td>
+                        <td>联系传真：{xak:field.conntact_fax/}</td>
+                    </tr>
+                    <tr>
+                        <td>免费咨询热线：{xak:field.free_tel/}</td>
+                        <td>下班及周末联系电话：{xak:field.weekend_tel/}</td>
+                    </tr>
+                </table>
+                <a href="#"><img src="/images/common/lijibaoming.jpg" alt=""/></a>
+            </div>
+
+            <div class="nnta">
+                <div class="mt"><a href="#">课程详细</a></div>
+            </div>
+            <div class="nnz">
+                <div class="shouz">培训受众</div>
+                <div class="jh">
+                    {xak:field.target_people/}
+                </div>
+                <div class="shouz">课程收益</div>
+                <div class="jh">{xak:field.course_benefits/}</div>
+                <div class="shouz">课程概要</div>
+                <div class="jh">{xak:field.course_intro/}</div>
+                <div class="bm"><a href="#"><img src="/images/common/lijibaoming.jpg" alt=""/></a></div>
+            </div>
+            <div class="nnd"></div>
+        </div>
+    </div>
+</div>
+{xak:include filename="footer.htm"/}
+</body>
+</html>

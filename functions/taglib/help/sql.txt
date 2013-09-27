@@ -1,0 +1,7 @@
+SQL标签
+>>xak>>
+{xak:sql sql=''}
+[field:title/]
+{/xak}
+>>xak>>
+sql='' 完整的SQL语句

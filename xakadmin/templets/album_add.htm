@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+<title>增加文档</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/swfupload.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../functions/js/xakajax2.js"></script>
+<script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script language="javascript" src="../functions/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/album.js"></script>
+<script type="text/javascript"src="js/handlers.js"></script>
+<script type="text/javascript" src="../images/swfupload/swfupload.js"></script>
+<script language="javascript">
+var swfu = null;
+
+window.onload = function ()
+{
+			swfu = new SWFUpload(
+			{
+				// Backend Settings
+				upload_url: "swfupload.php",
+				post_params: {"PHPSESSID": "<?php echo session_id(); ?>", "dopost" : ""},
+
+				// File Upload Settings
+				file_size_limit : "2 MB",	// 2MB
+				file_types : "*.jpg; *.gif; *.png",
+				file_types_description : "选择 JPEG/GIF/PNG 格式图片",
+				file_upload_limit : "0",
+
+				file_queue_error_handler : fileQueueError,
+				file_dialog_complete_handler : fileDialogComplete,
+				upload_progress_handler : uploadProgress,
+				upload_error_handler : uploadError,
+				upload_success_handler : uploadSuccess,
+				upload_complete_handler : uploadComplete,
+
+				button_image_url : "../images/SmallSpyGlassWithTransperancy_17x18.png",
+				button_placeholder_id : "spanButtonPlaceholder",
+				button_width: 250,
+				button_height: 18,
+				button_text : '<span class="button">选择本地图片 <span class="buttonSmall">(单图最大为 2 MB，支持多选)</span></span>',
+				button_text_style : '.button { font-family: Helvetica, Arial, sans-serif; font-size: 12pt; } .buttonSmall { font-size: 10pt; }',
+				button_text_top_padding: 0,
+				button_text_left_padding: 18,
+				button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+				button_cursor: SWFUpload.CURSOR.HAND,
+				
+				// Flash Settings
+				flash_url : "../images/swfupload/swfupload.swf",
+
+				custom_settings : {
+					upload_target : "divFileProgressContainer"
+				},
+				
+				// Debug Settings
+				debug: false
+			});
+};
+</script>
+</head>
+<body topmargin="8" background="images/allbg.gif">
+<form name="form1" action="album_add.php" enctype="multipart/form-data" method="post" onSubmit="return checkSubmitAlb();">
+  <input type="hidden" name="channelid" value="<?php echo $channelid?>" />
+  <input type="hidden" name="cid" value="<?php echo $cid; ?>" />
+  <input type="hidden" name="imagebody" value="" />
+  <input type="hidden" name="dopost" value="save" />
+  <input name="maxwidth" type="hidden" id="maxwidth" size="10" value="<?php echo $cfg_album_width; ?>" />
+  <input type="hidden" name="tags" value="" />
+  <input type="hidden" name="sortup" value="0" />
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="65%" height="30"><img height=14 src="images/book1.gif" width="20"/>&nbsp;<a href="catalog_do.php?cid=<?php echo $cid?>&channelid=<?php echo $channelid?>&dopost=listArchives"><u>文档列表</u></a> &gt;&gt; 发布新文档</td>
+      <td width="30%" align='right'><?php echo $backurl; ?><a href="catalog_main.php">[<u>栏目管理</u>]</a>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="head1">
+    <tr>
+      <td colspan="2"><table width="168" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="84" height="24" align="center" background="images/itemnote1.gif">&nbsp;常规内容&nbsp;</td>
+            <td width="84" align="center" background="images/itemnote2.gif"><a href="#" onClick="ShowItem2()"><u>高级参数</u></a>&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="head2" style="display:none">
+    <tr>
+      <td colspan="2"><table width="168" height="24" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="84" align="center" background="images/itemnote2.gif"><a href="#" onClick="ShowItem1()"><u>常规内容</u></a>&nbsp;</td>
+            <td width="84" align="center" background="images/itemnote1.gif">高级参数&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="100%"  border="0" align="center" cellpadding="2" cellspacing="2" id="needset" style="border:1px solid #BFD8E0;background:#ffffff;">
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;文档标题：</td>
+            <td width='408'><input name="title" type="text" id="title" value="" style="width:388px"></td>
+            <td width="90">&nbsp;简略标题：</td>
+            <td><input name="shorttitle" type="text" id="shorttitle" style="width:150px"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td width="100%" height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;自定义属性：</td>
+            <td><?php
+          $dsql->SetQuery("Select * From `#@__arcatt` order by sortid asc");
+          $dsql->Execute();
+          while($trow = $dsql->GetObject())
+          {
+          	if($trow->att=='j')
+          	echo "<input class='np' type='checkbox' name='flags[]' id='flags{$trow->att}' value='{$trow->att}' onclick='ShowUrlTr()'>{$trow->attname}[{$trow->att}]";
+          	else
+          	echo "<input class='np' type='checkbox' name='flags[]' id='flags{$trow->att}' value='{$trow->att}'>{$trow->attname}[{$trow->att}]";
+          }
+            	?></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="redirecturltr" style="display:none">
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;跳转网址：</td>
+            <td><input name="redirecturl" type="text" id="redirecturl" style="width:300px" value="" /></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="pictable">
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;缩 略 图：</td>
+            <td><table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                  <td height="30"><input name="picname" type="text" id="picname" style="width:240px" />
+                    <input type="button"  value="本地上传" style="width:70px;cursor:pointer;" />
+                    <iframe name='uplitpicfra' id='uplitpicfra' src='' style='display:none'></iframe>
+                    <span class="litpic_span">
+                    <input name="litpic" type="file" id="litpic"  onChange="seePicNewAlb(this, 'divpicview', 'uplitpicfra', 165, 'album_add.php');" size="1" class='buttonGrey'/>
+                    </span>
+                    <input type="button" name="Submit2" value="站内选择" style="margin-left:8px;" onClick="SelectImage('form1.picname','small');" class='buttonGrey'/>
+                    <input type="button" name="Submit2" value="裁剪" style="margin-left:8px;" onClick="imageCut('picname');" class='buttonGrey'/>
+                    <input type='checkbox' class='np' name='ddisremote' value='1' id='ddisremote'/>
+                    远程 </td>
+                </tr>
+              </table></td>
+            <td width="150" align="center"><div id='divpicview' class='divpre'></div></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td width="100%" height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;</td>
+            <td width="300"><input type='checkbox' class='np' name='ddisfirst' value='1' checked="checked" />
+              没有缩略图时获取图集的第一幅图</td>
+            <td width="60">&nbsp;权重：</td>
+            <td><input name="weight" type="text" id="weight" style="width:50px" value="<?php echo $maxWright['cc'];?>" /></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;文档主栏目：</td>
+            <td><span id='typeidct'>
+              <?php
+          $typeOptions = GetOptionList($cid,$cuserLogin->getUserChannel(),$channelid);
+          echo "<select name='typeid' id='typeid' style='width:240px'>\r\n";
+          echo "<option value='0'>请选择栏目...</option>\r\n";
+          echo $typeOptions;
+          echo "</select>";
+			?>
+              </span> <img src='images/menusearch.gif' style='cursor:pointer;' onClick="ShowCatMap(event, this, <?php echo $channelid; ?>, 'typeid')" alt='快捷选择' title='快捷选择' /> &nbsp;
+              <?php
+			if($cfg_need_typeid2=='Y')
+			{
+				echo "<a href='javascript:AddTypeid2();'>【<u>选择副栏目</u>】</a>";
+			}
+			?>
+             </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id='typeid2tr' style='display:none'>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;文档副栏目：</td>
+            <td><span id='typeid2ct'></span>
+              <input type='text' name='typeid2' id='typeid2' value='' style='width:200px;' />
+              <img src='images/menusearch2.gif' style='cursor:pointer;' onClick="ShowCatMap(event, this, <?php echo $channelid; ?>, 'typeid2')" alt='选择副栏目' title='选择副栏目' /></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td><?php PrintAutoFieldsAdd($cInfos['fieldset'],'autofield'); ?></td>
+    </tr>
+    <tr>
+      <td height="24"  bgcolor="#F9FCFD" class="bline2">&nbsp;<strong>图片上传选项</strong></td>
+    </tr>
+    
+    <tr>
+      <td height="24" class="bline">
+      <input type="hidden" name="pagestyle" value="3" />
+      <input type="hidden" name="row" value="100" />
+      <input type="hidden" name="col" value="100" />
+      <input type="hidden" name="ddmaxwidth" value="200" />
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;<b>上传方式：</b></td>
+            <td><input name="isrm" class="np" type="hidden" id="isrm" value="1"  />
+              <input name="byhand" class="np" type="checkbox" id="byhand" value="1" disabled="ture" checked />
+              手工上传
+              <input name="formzip" class="np" type="checkbox" id="formzip" value="1" onClick="showZipField(this,'zipff');" />
+              从ZIP压缩包中解压图片 </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="zipff" style="display:none">
+      <td class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="100">
+          <tr>
+            <td width="90">&nbsp;压缩包文件：</td>
+            <td><input type='text' name='zipfile' id='zipfile' style='width:300px'>
+              <input name='addon_bt' type='button' class='inputbut' value='浏览...' onClick="SelectSoft('form1.zipfile')">
+              <input name="delzip" type="checkbox" id="delzip" value="1" checked="checked" />
+              处理后删除压缩文件 </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td width="100%" height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="80" height="40">&nbsp;<b>手工上传：</b></td>
+            <td><div style="display: inline; float:left; border: solid 1px #7FAAFF; background-color: #C5D9FF; padding: 2px;"> <span id="spanButtonPlaceholder"></span> </div></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="handfield">
+      <td class="bline" style="background:url(images/albviewbg.gif) #fff 0 20px no-repeat;"><table width='100%' height='160' style="margin:0 0 20px 0">
+          <tr>
+            <td><div id="divFileProgressContainer" style="height:75px;"></div>
+              <div id="thumbnails"></div></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24" bgcolor="#F9FCFD" class="bline2">&nbsp;<strong>详细介绍：</strong></td>
+    </tr>
+    <tr>
+      <td height="24"><?php GetEditor("body","",450,"Default" ); ?></td>
+    </tr>
+  </table>
+  <!-- //高级参数 -->
+  <table width="100%"  border="0" align="center" cellpadding="2" cellspacing="2" id="adset" style="border:1px solid #BFD8E0;background:#ffffff;display:none">
+  	<?php if($open_comment){ ?>  
+  	<tr>
+      <td height="24" class="bline">                 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="90" height="22" width="240">&nbsp;评论选项： </td>               
+              <td><input type='radio' name='notpost' class='np' value='0' <?php if($cfg_feedback_forbid=='N') echo "checked='1' "; ?> />
+                  允许评论
+                  &nbsp;
+                  <input type='radio' name='notpost' class='np' value='1' <?php if($cfg_feedback_forbid=='Y') echo "checked='1' "; ?> />
+                  禁止评论 </td>
+            </tr>
+          </table>
+      </td>
+    </tr>
+    <?php }else{ ?>
+    <input type="hidden" name="notpost" value="0" />
+    <?php } ?>
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;文档来源：</td>
+            <td width="240"><input name="source" type="text" id="source" style="width:160px" value="" size="16">
+              <input name="selsource" type="button" id="selsource" value="选择"></td>
+            <td width="90">作　者：</td>
+            <td><input name="writer" type="text" id="writer" style="width:120px" value="">
+              <input name="selwriter" type="button" id="selwriter" value="选择"></td>
+          </tr>
+        </table></td>
+    </tr>    
+    
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;浏览次数：</td>
+            <td width="240"><input type='text' name='click' value='<?php echo ($cfg_arc_click=='-1' ? mt_rand(50, 200) : $cfg_arc_click); ?>' style='width:100px;' /></td>
+            <td width="90">标题颜色：</td>
+            <td><input name="color" type="text" id="color" style="width:120px">
+              <input name="modcolor" type="button" id="modcolor" value="选取" onClick="ShowColor(event,this)"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <?php if($open_member){ ?>  
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;阅读权限：</td>
+            <td width="240"><select name="arcrank" id="arcrank" style="width:150px">
+                <?php
+                $urank = $cuserLogin->getUserRank();
+                $dsql->SetQuery("Select * from `#@__arcrank` where adminrank<='$urank'");
+                $dsql->Execute();
+                while($row = $dsql->GetObject())
+                {
+                	echo "     <option value='".$row->rank."'>".$row->membername."</option>\r\n";
+                }
+              ?>
+              </select></td>
+            <td width="90">消费金币：</td>
+            <td><input name="money" type="text" id="money" value="0" size="10"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <?php }else{ ?>
+    <input type="hidden" name="arcrank" value="0" />
+    <input type="hidden" name="money" value="0" />
+    <?php } ?>
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;发布时间：</td>
+            <td width="240"><?php
+          $nowtime = GetDateTimeMk(time());
+          echo "<input name=\"pubdate\" value=\"$nowtime\" type=\"text\" id=\"pubdate\" style=\"width:120;\">";
+			?>
+              <script language="javascript" type="text/javascript">
+					Calendar.setup({
+						inputField     :    "pubdate",
+						ifFormat       :    "%Y-%m-%d %H:%M:%S",
+						showsTime      :    true,
+						timeFormat     :    "24"
+					});
+				 </script></td>
+            <td width="90">发布选项：</td>
+            <td><input name="ishtml" type="radio" class="np" value="1" checked>
+              生成HTML
+              <input type="radio" name="ishtml" class="np" value="0">
+              仅动态浏览 </td>     
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;关键字：</td>
+            <td>
+              <input type='text' name="keywords" id="keywords" style="width:60%;" value="" />
+              <input type="button" name="Submit" value="浏览..." onClick="SelectKeywords('form1.keywords');"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24" class="bline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;内容摘要：</td>
+            <td><textarea name="description" rows="6" id="description" style="width:60%;"></textarea></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="24"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="90">&nbsp;自定义文件名：</td>
+            <td><input type="text" name="filename" id="filename" style="width:200px;" /> （不包括后缀名如.html等）</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F9FCFD" style="border:1px solid #BFD8E0;border-top:none;">
+    <tr>
+      <td height="35"><table width="100%" border="0" cellspacing="1" cellpadding="1">
+          <tr>
+            <td width="17%">&nbsp;</td>
+            <td width="83%"><table width="214" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="115"><input name="imageField"" type="image" src="images/button_ok.gif" border="0" class="np" /></td>
+                  <td width="99"><img src="images/button_reset.gif" border="0" onClick="location.reload();" style="cursor:pointer;" /></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</form>
+<script language='javascript'>InitPage();</script>
+</body>
+</html>
