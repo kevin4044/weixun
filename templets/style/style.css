@@ -1,6 +1,5 @@
 @crset "utf-8";
-
-*{
+ *{
 padding:0px;
 margin:0px;
 }
@@ -451,6 +450,7 @@ table.m-course-info td {
 }
 .m-mee tr {
     width: 100%;
+    float: none;
     height: 30px;
 }
 .m-mee td {
@@ -903,7 +903,7 @@ table.m-course-info td {
 	}
 	
 .nntt{
-	width:751px;
+	width:100%;
 	float:left;
 	overflow:hidden;
 	height:32px;
@@ -913,8 +913,8 @@ table.m-course-info td {
 .nn{
 	width:752px;
 	float:left;
-	
-	
+	border-right:1px solid #9abac8;
+	border-bottom:1px solid #9abac8;
 	overflow:hidden;}
 	
 .nnta{
@@ -935,7 +935,7 @@ table.m-course-info td {
 	
 	
 .nnz{
-	width:749px;
+	width:100%;
 	float:left;
 	overflow:hidden;
 	border-left:1px solid #9abac8;
@@ -1422,6 +1422,7 @@ margin-left:230px;
 	overflow:hidden;
 	margin-top:30px;
 	margin-left:180px;
+	position: relative;
 	display:inline;}	
 	
 .xuyuandi{
@@ -1480,3 +1481,38 @@ background: url(/images/common/kf/kf_top.png) no-repeat;
     color:#FF6600;
     border-color:#FF6600;
     font-weight:bold;}
+
+div.f-click {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	right: 60px;
+	bottom:	40px;
+}
+
+div#xys {
+	display: none;
+	width: 500px;	
+	position:absolute;
+	top:500px;
+	left:700px;
+}
+.float_img {
+	float: right;
+	margin-left: 10px;
+	width: 95px;
+	height: 95px;
+}
+.m-content {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.my_table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}

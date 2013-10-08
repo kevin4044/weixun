@@ -1,7 +1,7 @@
 <?php
-$cfg_basehost = 'http://127.0.0.10:9999';
+$cfg_basehost = 'http://127.0.0.6';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'KkPUc8363D';
+$cfg_cookie_encode = 'EiTBa3435E';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '首页';

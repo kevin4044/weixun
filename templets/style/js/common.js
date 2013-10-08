@@ -20,3 +20,18 @@ function get_state (start_date_str, end_date_str) {
     }
 }
 
+function make_wish () {
+    $('#xys').show(); 
+}
+
+/*
+    @param personal_div_str
+    @param enterprise_div_str
+    @param type_id
+ */
+function display_and_hide ($p, $e, type_id) {
+    if (type_id == 3) {
+        $($e).hide();
+    }
+
+}

@@ -1,0 +1,84 @@
+127.0.0.1||/module/form.php?arcid=2||select typeid,price,name,start_date,location from `xak_course` union `xak_personal` and `xak_enterprise` where aid=2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||select typeid,price,name,start_date,location from `xak_course` union `xak_personal` and `xak_enterprise` where aid=2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||SELECT typeid, price, name, start_date, location
+FROM  `xak_course`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_personal`
+WHERE aid =2
+UNION SELECT typeid, price, name, start_date, location
+FROM  `xak_enterprise`
+WHERE aid =2 LIMIT 0,1;||SelectBreak
+127.0.0.1||/module/form.php?arcid=2||select typeid, price, name, start_date, location from `xak_course`, `#@_personal`, `xak_enterprise` where aid=2 LIMIT 0,1;||comment detect

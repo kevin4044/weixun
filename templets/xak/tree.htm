@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}" />
+    <meta name="keywords" content="{xak:global.cfg_keywords/}" />
+    <meta name="author" content="http://www.xak.cn" />
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+{xak:include filename="head.htm"/}
+<div class="main">
+    <div class="weizhi">您现在所在外置：{xak:field name='position'/}</div>
+    <div class="xu"></div>
+    <div class="my">
+     <div class="sm">请大家点击许愿树的小标许下你们诚挚的心愿，可以对任何人，说任何美好的愿望。当然，你也可以在这里大胆
+地说出深藏已久的爱恋情怀，或者是对亲人的道歉话语。只要你勇敢地说出了自己的心里话，我们相信
+被祝福的那个人一定能够感应到你的心意！
+操作步骤：
+1.请大家点击许愿树的小标许下你们诚挚的心愿
+2.如果您想查看每个星座的愿望请点击每个星座的小图标</div>
+     <div class="dw"></div>
+    </div>
+    <div class="xy">
+      <div class="xuyuantop"></div>
+      <div class="xuyuanzhong">
+        <div class="xys">
+            <img src="/images/common/xuyuanshu.jpg" alt="" />
+            <a href="javascript:make_wish();">
+                <div class="f-click"></div>
+            </a>
+        </div>
+      </div>
+      <div class="xuyuandi"></div>
+     </div>
+     <div class="g-pop-form">
+     	
+      <div id='xys' class="nn">
+        <div class="nntt">
+           <div class="baoo">提交报名</div>
+        </div>
+        <div class="nnz">
+        <!--TODO:regular expression-->
+           <script language = "JavaScript"> 
+function CheckForm()
+{
+  if (document.myform.name.value=="")
+  {
+    alert("请输入您的姓名!");
+	document.myform.name.focus();
+	return false;
+  }
+  if (document.myform.telephone.value=="")
+  {
+    alert("请输入您的电话!");
+	document.myform.telephone.focus();
+	return false;
+  }
+  if (document.myform.email.value=="")
+  {
+    alert("请输入您的邮箱地址!");
+	document.myform.email.focus();
+	return false;
+  }
+  if (document.myform.content.value=="")
+  {
+    alert("请输入反馈内容!");
+	document.myform.content.focus();
+	return false;
+  } 
+  if (document.myform.vdcode.value=="")
+  {
+    alert("请输入验证码!");
+	document.myform.vdcode.focus();
+	return false;
+  } 
+  $('xys').hide();
+}
+</script>
+
+<form name="myform" method="post" action="/module/email.php"  onsubmit="return CheckForm();">
+                    <table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
+                    <tr>
+                            <td height="40" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                             <td height="25" align="right">姓名&nbsp;</td>
+                            <td width="30%" height="25" align="left">
+                                <input class="input" name="name" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        
+
+                        <tr>
+                            <td width="15%" height="25" align="right" >联系电话：&nbsp;</td>
+                            <td height="25" align="left">
+                                <input class="input" name="tel" type="text" size="25" />
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                            
+                        <tr>
+                            <td width="15%" height=23 align="right" >电子邮箱:&nbsp;</td>
+                            <td height=23 align="left">
+                                <input class="input" name="email" type="text" size="25" />
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                           
+                        <tr>
+                            <td height="25" align="right" >培训课题:&nbsp;</td>
+                            <td height="25"><input class="input" name="subject" type="text" size="25" />
+                            &nbsp;<font color="red">*</font></td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >培训方向：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="target" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >培训课程:&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="course" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >期望开课地点：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="location" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        
+
+                        <tr>
+                        	<!--TODO: date picker-->
+                            <td height="25" align="right" >期望开课日期：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="date" type="date" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >其他说明：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="other_info" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+			           <tr>
+                            <td width="15%" height="25" align="right" >验证码：&nbsp;</td>
+                            <td height="25"  align="left">
+                                <input class="input" name="vdcode" type="text" size="10" />
+				<img align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？" src="/functions/vdimgck.php"/>
+                                <font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="15%">&nbsp;</td>
+                            <td>
+                                <input class="submit" type="submit" value="提 交" name="submitsure"> 
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+           
+           
+        </div>
+      </div>
+     	
+     </div><!--endof g-pop-form-->
+     
+    </div> 
+{xak:include filename="footer.htm"/}
+</body>
+</html>

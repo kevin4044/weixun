@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}" />
+    <meta name="keywords" content="{xak:global.cfg_keywords/}" />
+    <meta name="author" content="http://www.xak.cn" />
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+{xak:include filename="head.htm"/}
+<div class="main">
+    <div class="weizhi">您现在所在外置：{xak:field name='position'/}</div>
+    <div class="leftt">
+        <div class="jian">
+            <div class="ts">
+                <div class="kecheng">课程推荐</div>
+            </div>
+            <div class="tz">
+                <div class="mdd">
+                  <!--TODO:-->
+                    <ul>
+                        {xak:arclist typeid='1,2,3' flag='c' row='7' orderby='pubdate' addfields='name,location' channelid='14,16,17'}
+                        <li><a href="[field:arcurl/]">[field:location/]《[field:title/]》</a></li>
+                        {/xak:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="td"></div>
+        </div>
+       <div class="jian">
+         <div class="ts"> <div class="kecheng">推荐讲师</div></div>
+         <div class="tz">
+          {xak:arclist flag='c' row='3' orderby='weight' addfields='name,breif' channelid='15'}
+           <div class="si">
+             <div class="picc"><img src="[field:litpic/]" alt="[field:name/]" /></div>
+              <div class="lao">[field:name/]</div>
+             <div class="jie">
+            [field:breif function='cn_substrR(html2text(@me),40)'/]… 
+          </div>
+           </div>
+           {/xak:arclist}
+           
+           
+         </div>
+         <div class="td"></div>
+       </div>
+    </div>
+     <div class="rightt">
+       <div class="searcha">
+            <form class="input_search" action="/module/search.php">
+                <input type="text" name="q" value="" class="input_click" />
+                <input type="submit" name="bbshi" value="" class="sebutton" />
+                <input type="hidden" name="kwtype" value="0">
+                <input type="hidden" name="pagesize" value="16">
+            </form>
+      </div>
+      <div class="nd"><img src="/images/common/hao.jpg" alt="" /></div>
+        
+      <div class="nn">
+       <div class="sh" style="width:750px; height:10px; float:left;"></div>
+         <div class="nnt">
+           <div class="shi">师资队伍</div> 
+         </div>
+        <div class="nnz">
+            {xak:arclist row='7' orderby='weight' addfields='name,fields,breif' channelid='15'}
+          <div class="huo">
+            <div class="du">
+             <dl>[field:name/]</dl>
+             <dt>擅长领域：[field:fields/]</dt>
+             <dd><a href="[field:arcurl/]">详细介绍>></a></dd>
+            </div>
+           <div class="laoshi">
+           	[field:breif function='cn_substrR(html2text(@me),460)'/]
+	       </div> 
+          </div>
+          {/xak:arclist}
+          </div>
+        <div class="nnd"></div>
+      </div>
+     
+ 		</div>
+	   </div>
+{xak:include filename="footer.htm"/}
+</body>
+</html>
