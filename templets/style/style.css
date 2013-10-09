@@ -1516,3 +1516,28 @@ div#xys {
     border-spacing: 2px;
     border-color: gray;
 }
+
+div.pay_window {
+    display: none;
+    background-color: white;
+    border: 1px solid #9abac8;
+    position: fixed;
+    bottom: 40%;
+    width: 354px;
+    height: 109px;
+    left: 40%;
+}
+div.pay_window h4 {
+    font-size: 20px;
+    text-align: center;
+}
+div.pay_window p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+div.pay_window input {
+    margin-left: 80px;
+}

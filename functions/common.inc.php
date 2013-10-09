@@ -2,8 +2,8 @@
 
 
 /*报错开关*/
-error_reporting(E_ALL);
-//error_reporting(E_ALL || ~E_NOTICE);
+//error_reporting(E_ALL);
+error_reporting(E_ALL || ~E_NOTICE);
 
 define('XAKINC', str_replace("\\", '/', dirname(__FILE__) ) );
 define('XAKROOT', str_replace("\\", '/', substr(XAKINC,0,-10) ) );

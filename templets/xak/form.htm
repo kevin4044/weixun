@@ -58,41 +58,28 @@
 <div class="nnz">
 
 <script language="JavaScript">
+    /*
+     @describe form ajax callback
+     @param
+     */
+    function ajax_call_back(data) {
+        $('input').attr('disabled','disabled');
+        $('.submit').hide();
+        $('.submitt').hide();
+        $('#vdcode').hide();
+        $('td#pay_button').html(data);
+    }
     var course_type = {xak:var.course_type/};
     $(document).ready(function(){
         display_and_hide('tr.f_personal', 'tr.f_enterprise', course_type);
+        $('#enterprise_form').bind('submit',function(){
+            ajaxSubmit(this,ajax_call_back);
+            return false;
+        });
     });
-
-    function CheckForm() {
-        if (document.myform.name.value == "") {
-            alert("请输入您的姓名!");
-            document.myform.name.focus();
-            return false;
-        }
-        if (document.myform.telephone.value == "") {
-            alert("请输入您的电话!");
-            document.myform.telephone.focus();
-            return false;
-        }
-        if (document.myform.email.value == "") {
-            alert("请输入您的邮箱地址!");
-            document.myform.email.focus();
-            return false;
-        }
-        if (document.myform.content.value == "") {
-            alert("请输入反馈内容!");
-            document.myform.content.focus();
-            return false;
-        }
-        if (document.myform.vdcode.value == "") {
-            alert("请输入验证码!");
-            document.myform.vdcode.focus();
-            return false;
-        }
-    }
 </script>
 
-<form name="myform" method="post" action="/module/buy_action.php" onsubmit="return CheckForm();">
+<form id="enterprise_form" name="myform" method="post" action="/module/buy_action.php" >
     <input name="arcid" type="hidden" size="25"
            value={xak:var.arcid/}>
     <table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
@@ -103,7 +90,7 @@
         <tr>
             <td height="25" align="right">课程名：&nbsp;</td>
             <td width="30%" height="25" align="left">
-                <input class="input" name="course_name" disabled="disabled" type="text" size="25"
+                <input class="input" name="course_name" readonly="readonly" type="text" size="25"
                     value={xak:var.name/}>
                 &nbsp;<font color="red">*</font>
             </td>
@@ -116,7 +103,7 @@
         <tr>
             <td width="15%" height="25" align="right">开课时间：&nbsp;</td>
             <td height="25" align="left">
-                <input class="input" name="course_start_time" disabled="disabled" type="text" size="25"
+                <input class="input" name="course_start_time" readonly="readonly" type="text" size="25"
                    value={xak:var.start_date function="MyDate('',@me)"/}/>
                 &nbsp;<font color="red">*</font>
             </td>
@@ -128,7 +115,7 @@
         <tr>
             <td width="15%" height=23 align="right">开课地点：&nbsp;</td>
             <td height=23 align="left">
-                <input class="input" name="course_location" disabled="disabled" type="text" size="25"
+                <input class="input" name="course_location" readonly="readonly" type="text" size="25"
                        value={xak:var.location/}>
                 &nbsp;<font color="red">*</font>
             </td>
@@ -139,7 +126,7 @@
 
         <tr>
             <td height="25" align="right">费用：&nbsp;</td>
-            <td height="25"><input class="input" name="course_price" disabled="disabled" type="text" size="25"
+            <td height="25"><input class="input" name="course_price" readonly="readonly" type="text" size="25"
                    value={xak:var.price/}>
                 &nbsp;<font color="red">*</font></td>
         </tr>
@@ -174,7 +161,7 @@
             <td height="25" align="right">负责人电话：&nbsp;</td>
             <td height="25">
                 <input class="input" name="client_tel" type="text" size="25"/>
-                &nbsp;<font color="red">*</font>
+                &nbsp;
             </td>
         </tr>
         <tr class="f_personal">
@@ -220,7 +207,7 @@
             <td height="25" align="right">公司电话：&nbsp;</td>
             <td height="25">
                 <input class="input" name="client_company_tel" type="text" size="25"/>
-                &nbsp;<font color="red">*</font>
+                &nbsp;
             </td>
         </tr>
         <tr class="f_enterprise">
@@ -231,7 +218,7 @@
             <td height="25" align="right">公司传真：&nbsp;</td>
             <td height="25">
                 <input class="input" name="client_company_fax" type="text" size="25"/>
-                &nbsp;<font color="red">*</font>
+                &nbsp;
             </td>
         </tr>
         <tr class="f_enterprise">
@@ -250,7 +237,7 @@
             <td width="15%" height="25" align="right">其他说明：&nbsp;</td>
             <td height="25" align="left">
                 <textarea class="input" name="content" rows="8" cols="48"></textarea>
-                <font color="red">*</font>
+
             </td>
         </tr>
         <tr>
@@ -259,24 +246,12 @@
         <tr>
             <td width="15%" height="25" align="right">支付方式：&nbsp;</td>
             <td height="25" align="left">
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="my_table">
-                    <tr onMouseMove="javascript:this.bgColor='#F8F8F8';" onMouseOut="javascript:this.bgColor='#FFFFFF';">
-                        <td width="10%" align="right" style="vertical-align:middle;"></td>
-                        <td width="20%" valign="middle" style="vertical-align:middle;"> 方式 </td>
-                        <td width="60%"> 描述 </td>
-                        <td width="10%" align="center"> 手续费</td>
-                        <font color="red">*</font>
-                    </tr>
+
                 {xak:array.shops_paymentarr}
-                    <tr onMouseMove="javascript:this.bgColor='#F8F8F8';" onMouseOut="javascript:this.bgColor='#FFFFFF';">
-                        <td width="10%" align="right" style="vertical-align:middle;"><input name="paytype" type="radio" value="{xak:value.id/}" /></td>
-                        <td width="20%" valign="middle" style="vertical-align:middle;"> {xak:value.name/} </td>
-                        <td width="60%"> {xak:value.description/} </td>
-                        <td width="10%" align="center"> <span class="red">{xak:value.fee/}</span>元</td>
-                        <font color="red">*</font>
-                    </tr>
+                        <input name="paytype" type="radio" value="{xak:value.id/}" />
+                         {xak:value.name/}<font color="red">*</font>
                 {/xak:array}
-                </table>
+
             </td>
         </tr>
         <tr>
@@ -286,7 +261,7 @@
         <tr>
             <td width="15%" height="25" align="right">验证码：&nbsp;</td>
             <td height="25" align="left">
-                <input class="input" name="vdcode" type="text" size="10"/>
+                <input id="vdcode" class="input" name="vdcode" type="text" size="10"/>
                 <img align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？"
                      src="/functions/vdimgck.php"/>
                 <font color="red">*</font>
@@ -302,12 +277,24 @@
                 <input class="submitt" type="reset"  name="Reset">
             </td>
         </tr>
+        <tr>
+            <td width="15%">&nbsp;</td>
+            <td id="pay_button">
+
+            </td>
+        </tr>
     </table>
 </form>
 
 
 </div>
 <div class="nnd"></div>
+</div>
+<div class="pay_window">
+    <h4>请您在新打开的支付页面上完成支付</h4>
+    <p>支付完成前请不要关闭此窗口</p>
+    <input id="success" type="button" name='finish' value="支付成功"/>
+    <input id="failed" type="button" name='erro' value="支付失败"/>
 </div>
 
 </div>

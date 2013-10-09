@@ -83,12 +83,32 @@ if(isset($sta))
 {
     $addsql = "WHERE s.`state`='$sta'";
 }
-$sql = "SELECT s.`oid`,s.`cartcount`,s.`price`,s.`state`,s.`stime`,s.priceCount,s.dprice,s.paytype,u.`consignee`,u.`tel`,s.`userid` FROM #@__shops_orders AS s LEFT JOIN #@__shops_userinfo AS u ON s.oid=u.oid $addsql ORDER BY `stime` DESC";
+
+
+if ($id==1 || !isset($id)) {
+    $sql = "SELECT s.`oid`,s.`name`,s.`price`,s.`people_count`,s.`stime`,s.priceCount,
+    s.dprice,s.paytype,p.client_name,p.client_email, p.client_tel,p.client_mobile,p.co_name,p.co_tel,p.co_fax,p.co_addr,p.content
+     FROM #@__shops_orders AS s LEFT JOIN #@__shop_public AS p ON s.oid=p.oid $addsql ORDER BY `stime` DESC";
+    $tplfile = XAKADMIN."/templets/shops_operations.htm";
+} else if ($id==2) {
+    $sql = "SELECT s.`oid`,s.`name`,s.`people_count`,s.`stime`
+    ,p.days, p.date,p.expect,p.co_info,p.job,p.co_name,p.co_tel,p.email,p.co_addr,p.postcode
+     FROM #@__shops_orders AS s LEFT JOIN #@__shop_enterprise AS p where s.oid=p.oid $addsql ORDER BY `stime` DESC";
+    $tplfile = XAKADMIN."/templets/shops_op_enterprise.htm";
+} else if ($id==3) {
+    $sql = "SELECT s.`oid`,s.`name`,s.`people_count`,s.`stime`
+    ,p.tel, p.email,p.content
+     FROM #@__shops_orders AS s LEFT JOIN #@__shop_personal AS p where s.oid=p.oid $addsql ORDER BY `stime` DESC";
+    $tplfile = XAKADMIN."/templets/shops_op_personal.htm";
+} else {
+    exit("unexpected id");
+}
+
+
 
 $dlist = new DataListCP();
 $dlist->SetParameter("oid",$oid);
 if(isset($sta)) $dlist->SetParameter("sta",$sta);
-$tplfile = XAKADMIN."/templets/shops_operations.htm";
 
 //这两句的顺序不能更换
 $dlist->SetTemplate($tplfile);      //载入模板

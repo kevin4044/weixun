@@ -109,15 +109,14 @@ function OpenMyWinN(surl,w,h){
   <tr bgcolor="#F9FCFD">
     <td width="8%" align="center">选择</td>
     <td width="25%" align="center">订单号</td>
-    <td align="center">收货人</td>
-    <td align="center">数量</td>
+    <td align="center">课程名</td>
+    <td align="center">费用</td>
     <td width="22%" align="center">生成日期</td>
-    <td align="center">订单价</td>
-    <td align="center">配送费</td>
-    <td align="center">总计</td>
-    <td align="center">支付方式</td>
-    <td align="center">状态</td>
-    <td align="center">用户</td>
+    <td align="center">负责人姓名</td>
+    <td align="center">报名人数</td>
+    <td align="center">负责人手机</td>
+    <td align="center">负责人email</td>
+    <td align="center">公司名称</td>
   </tr>
   <form name="form1">
 {xak:datalist}
@@ -128,34 +127,30 @@ function OpenMyWinN(surl,w,h){
         <?php echo $fields['oid'];?>
       </td>
       <td align="center">
-        <a href="javascript:OpenMyWinN('shops_operations_userinfo.php?oid=<?php echo $fields['oid']?>',500,350);" ><?php echo $fields['consignee']?></a>
+        <a href="" ><?php echo $fields['name']?></a>
       </td>
       <td align="center">
-        <?php echo $fields['cartcount']?>
-        <a href="javascript:OpenMyWinN('shops_operations_cart.php?oid=<?php echo $fields['oid']?>',680,450);" >[详情]</a>
+        <?php echo $fields['price']?>
       </td>
       <td align="center">
         <?php echo GetDateTimeMk($fields['stime'])?>
         (<font color="#FF0000">{xak:field.stime function="floorTime(time()-@me,@me)"/}</font>)
       </td>
       <td align="center">
-        <?php echo $fields['price']?>
+        <?php echo $fields['client_name']?>
       </td>
       <td align="center">
-        <?php echo $fields['dprice']?>
+        <?php echo $fields['people_count']?>
       </td>
       <td align="center">
-        <?php echo $fields['priceCount']?>
+        <?php echo $fields['client_mobile']?>
       </td>
       <td align="center">
-        <?php echo GetsType($fields['paytype'])?>
+        <?php echo $fields['client_email']?>
       </td>
       <td align="center">
-        <?php echo GetSta($fields['state'])?>
-      </td>
-
-      <td align="center">
-        <?php echo GetMemberID($fields['userid'])?>
+        <!--<?php echo GetSta($fields['co_name'])?>-->
+        <?php echo $fields['co_name']?>
       </td>
     </tr>
 {/xak:datalist}
@@ -165,7 +160,6 @@ function OpenMyWinN(surl,w,h){
       <input type="button" name="b7" value="反选" class='buttonGrey' style="width:40" onClick="ReSel();">
       <input type="button" name="b" value="删除" style="width:40" onClick="DelSel();" class='buttonGrey' />
       <input type="button" name="b5" value="设为已付款状态" class='buttonGrey' style="width:100" onClick="UpSel();">
-      <input type="button" name="b9" value="设为已发货状态" class='buttonGrey' style="width:100" onClick="PushSel();">
 	  <input type="button" name="b9" value="设为已完成状态" class='buttonGrey' style="width:100" onClick="OkSel();">
     </td>
   </tr>

@@ -1,5 +1,5 @@
 <?php
-$cfg_basehost = 'http://127.0.0.6';
+$cfg_basehost = 'http://127.0.0.10:9999';
 $cfg_cmspath = '';
 $cfg_cookie_encode = 'KkPUc8363D';
 $cfg_indexurl = '/';

@@ -21,16 +21,16 @@ if(strtolower($vdcode)!=$svali || $svali=='')
 }
 
 $arcid = $_POST['arcid'];
-$price = $_POST['price'];
+$price = $_POST['course_price'];
 $course_name = $_POST['course_name'];
 $client_name = $_POST['client_name'];
 $client_count = $_POST['client_count'];
 $client_tel = $_POST['client_tel'];
 $client_email = $_POST['client_email'];
-$company_name = isset($company_name)? $company_name : NULL;
-$company_tel = isset($company_tel)? $company_tel : NULL;
-$company_fax = isset($company_fax)? $company_fax : NULL;
-$company_address = isset($company_address)? $company_address : NULL;
+$co_name = isset($_POST['client_company'])? $_POST['client_company'] : NULL;
+$co_tel = isset($_POST['client_company_tel'])? $_POST['client_company_tel'] : NULL;
+$co_fax = isset($_POST['client_company_fax'])? $_POST['client_company_fax'] : NULL;
+$co_address = isset($_POST['client_company_address'])? $_POST['client_company_address'] : NULL;
 $content = $_POST['content'];
 
 //生成订单号
@@ -39,6 +39,7 @@ if(!isset($dopost) || empty($dopost)) {
     //订单号
     $oid = 0;
     $tmp_cart = new MemberShops();
+    //gen the oid
     $oid = $tmp_cart->MakeOrders();
 
     $rows = $dsql->GetOne("SELECT `oid` FROM #@__shops_orders WHERE oid='$oid' LIMIT 0,1");
@@ -49,23 +50,23 @@ if(!isset($dopost) || empty($dopost)) {
     //加入新订单
     if(empty($rows['oid']))
     {
-        $sql = "INSERT INTO `#@__shops_orders` (`oid`,`cartcount`,`price`,`state`,`ip`,`stime`,`pid`,`paytype`,`dprice`,`priceCount`)
-            VALUES ('$oid','0','$price','0','$ip','$stime','0','$paytype','0','$price');";
-
+        //TODO:extra fee is not counted in
+        $sql = "INSERT INTO `#@__shops_orders`
+        (`oid`,`name`,`price`,`state`,`ip`,`stime`,`pid`,`paytype`,`dprice`,`priceCount`,`people_count`)
+            VALUES ('$oid','$course_name','$price','0','$ip','$stime','0','$paytype','0','$price','$client_count')";
+        echo $sql;
+        $val =array();
         //更新订单
         if($dsql->ExecuteNoneQuery($sql))
         {
             //写入订单产品
             $val['price'] = str_replace(",","",$val['price']);
-            $dsql->ExecuteNoneQuery("INSERT INTO `#@__shops_products` (`aid`,`oid`,`userid`,`title`,`price`,`buynum`)
-                    VALUES ('$arcid','$oid','0','$course_name','$price','$client_count');");
+            $dsql->ExecuteNoneQuery("INSERT INTO `#@__shop_public` (`oid`,`client_name`,`client_tel`,`client_mobile`,
+                    `client_email`,`co_name`,`co_tel`,`co_fax`,`co_addr`,`content`)
+                    VALUES ('$oid','$client_name','$client_tel','$client_mobile','$client_email','$co_name','$co_tel',
+                    '$co_fax','$co_addr','$content')");
+            echo $sql;
             //插入收件人信息
-            $sql = "INSERT INTO `#@__shops_userinfo` (`userid`,`oid`,`consignee`,`address`,`zip`,`tel`,`email`,`des`,
-                `people_count`,`company_name`, `company_tel`, `company_fax`)
-                 VALUES ('0','$oid','$client_name','$company_address','0','$client_tel','$client_email','$content',
-                 '$client_count','$company_name', '$company_tel','$company_fax');
-                ";
-            $dsql->ExecuteNoneQuery($sql);
         }
         else
         {
@@ -74,6 +75,7 @@ if(!isset($dopost) || empty($dopost)) {
         }
     }
     //更新订单
+    /*
     else
     {
         $sql = "UPDATE `#@__shops_orders` SET
@@ -105,33 +107,32 @@ if(!isset($dopost) || empty($dopost)) {
         }
         unset($sql);
     }
+    */
 
-    //获取支付方式
-    $rs = $dsql->GetOne("SELECT * FROM `#@__payment` WHERE id='$paytype' ");
-    require_once XAKINC.'/payment/'.$rs['code'].'.php';
-    $pay = new $rs['code'];
-    if($rs['code']=="cod" || $rs['code']=="bank")
-    {
-        $order = $oid;
-    }
-    //在线支付
-    else
-    {
-        $order = array(
-            'out_trade_no' => $oid,
-            'price' => $price + $rs['fee'],
-            'product_name' => $course_name;
-        );
-        require_once XAKDATA.'/payment/'.$rs['code'].'.php';
-    }
-    //获取支付按钮
-    $button = $pay->GetCode($order,$payment);
-    $dtp = new XakTemplate();
-    //TODO:set templetes
+    $button = get_pay_button($oid, $paytype, $price,$course_name);
+
+    echo $button;
+
 }
-//获取支付方式.
+//TODO:what does it mean
+//支付返回
+else if ($dopost == 'return')
+{
+    $write_list = array('alipay', 'bank', 'cod', 'yeepay');
+    if (in_array($code, $write_list))
+    {
+        require_once XAKINC.'/payment/'.$code.'.php';
+        $pay = new $code;
+        $msg=$pay->respond();
+        ShowMsg($msg, "javascript:;", 0, 3000);
+        exit();  
+    } 
+	else 
+	{
+        exit('Error:File Type Can\'t Recognized!');
+    }
+}
 
-//更新支付方式
 
 
 
@@ -153,4 +154,37 @@ function GetPeiSon($sz,$xz,$heft)
         $price = round($price,2);
     }
     return $price;
+}
+/*
+ *@description  get_pay button by pay type
+ *@param        $oid order id
+ *@param        $paytype typeid 
+ *@param        $price product price
+ *@return       pay button code
+ */
+function get_pay_button($oid,$paytype,$price,$course_name)
+{
+    global $dsql;
+    //获取支付方式
+    $rs = $dsql->GetOne("SELECT * FROM `#@__payment` WHERE id='$paytype' ");
+    require_once XAKINC.'/payment/'.$rs['code'].'.php';
+    $pay = new $rs['code'];
+    if($rs['code']=="cod" || $rs['code']=="bank")
+    {
+        $order = $oid;
+    }
+    //在线支付
+    else
+    {
+        $order = array(
+            'out_trade_no' => $oid,
+            'price' => $price + $rs['fee'],
+            'product_name' => $course_name
+        );
+        require_once XAKDATA.'/payment/'.$rs['code'].'.php';
+    }
+    $payment = 'none';
+    //获取支付按钮
+    $button = $pay->GetCode($order,$payment);
+    return $button;
 }
