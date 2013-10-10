@@ -1,0 +1,1 @@
+<div class="more"><a href="[field:typelink/]"><img src="/images/common/more.jpg" alt="" /></a></div>

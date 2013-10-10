@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>订单填写_{xak:global.cfg_webname/}</title>
+    <meta name="description" content="{xak:global.cfg_description/}"/>
+    <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
+    <meta name="author" content="http://www.xak.cn"/>
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+<?php
+   pasterTempletDiy("xak/head.htm");
+?>
+<div class="main">
+<div class="weizhi">您现在所在位置：订单填写</div>
+<?php
+   pasterTempletDiy("xak/sidebar.htm");
+?>
+<div class="rightt">
+
+
+<div class="nn">
+<div class="nntt">
+    <div class="baoo">提交报名</div>
+</div>
+<div class="nnz">
+
+<script language="JavaScript">
+    /*
+     @describe form ajax callback
+     @param
+     */
+    function ajax_call_back(data) {
+        $('input').attr('disabled','disabled');
+        $('.submit').hide();
+        $('.submitt').hide();
+        $('#vdcode').hide();
+        $('td#pay_button').html(data);
+    }
+    $(document).ready(function(){
+        $('#enterprise_form').bind('submit',function(){
+           ajaxSubmit(this,ajax_call_back);
+           return false;
+        });
+    });
+</script>
+
+<form id="enterprise_form" name="myform" method="post" action="/module/buy_action.php" >
+<input name="arcid" type="hidden" size="25"
+       value={xak:var.arcid/}>
+    <input name="topid" type="hidden" size="25"
+           value={xak:var.topid/}>
+<table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
+<tr>
+    <td height="40" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td height="25" align="right">课程名：&nbsp;</td>
+    <td width="30%" height="25" align="left">
+        <input class="input" name="course_name" readonly="readonly" type="text" size="25"
+               value={xak:var.data.name/}>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+
+<tr>
+    <td width="15%" height="25" align="right">开课时间：&nbsp;</td>
+    <td height="25" align="left">
+        <input class="input" name="start_date" readonly="readonly" type="text" size="25"
+               value={xak:var.data.start_date function="MyDate('',@me)"/}/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td width="15%" height=23 align="right">开课地点：&nbsp;</td>
+    <td height=23 align="left">
+        <input class="input" name="location" readonly="readonly" type="text" size="25"
+               value={xak:var.data.location/}>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td height="25" align="right">费用：&nbsp;</td>
+    <td height="25"><input class="input" name="course_price" readonly="readonly" type="text" size="25"
+                           value={xak:var.data.price/}>
+        &nbsp;<font color="red">*</font></td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">姓名：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="name" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">报名人数：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="people_count" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">电话：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="tel" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+
+<tr class="f_personal">
+    <td height="25" align="right">Email：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="email" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+<tr>
+    <td width="15%" height="25" align="right">其他说明：&nbsp;</td>
+    <td height="25" align="left">
+        <textarea class="input" name="content" rows="8" cols="48"></textarea>
+
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+<tr>
+    <td width="15%" height="25" align="right">支付方式：&nbsp;</td>
+    <td height="25" align="left">
+
+        {xak:array.shops_paymentarr}
+        <input name="paytype" type="radio" value="{xak:value.id/}" />
+        {xak:value.name/}<font color="red">*</font>
+        {/xak:array}
+
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr id="vdcode" >
+    <td width="15%" height="25" align="right">验证码：&nbsp;</td>
+    <td height="25" align="left">
+        <input class="input" name="vdcode" type="text" size="10"/>
+        <img align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？"
+             src="/functions/vdimgck.php"/>
+        <font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+<tr>
+    <td width="15%">&nbsp;</td>
+    <td>
+        <input class="submit" type="submit"  name="submitsure">
+        <input class="submitt" type="reset"  name="Reset">
+    </td>
+</tr>
+<tr>
+    <td width="15%">&nbsp;</td>
+    <td id="pay_button">
+
+    </td>
+</tr>
+</table>
+</form>
+
+
+</div>
+<div class="nnd"></div>
+</div>
+
+
+</div>
+</div>
+<?php
+   pasterTempletDiy("xak/footer.htm");
+?>
+</body>
+</html>

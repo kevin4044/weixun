@@ -111,7 +111,8 @@ $fields = array();
     </tr>
     <tr bgcolor="#F9FCFD">
         <td width="8%" align="center">选择</td>
-        <td width="20%" align="center">订单号</td>
+        <td width="10%" align="center">订单号</td>
+        <td align="center">状态</td>
         <td align="center">内训课题</td>
         <td align="center">计划培训天数</td>
         <td align="center">生成日期</td>
@@ -141,7 +142,10 @@ foreach( $blockValue as $key=>$fields )
                 <?php echo $fields['oid'];?>
             </td>
             <td align="center">
-                <a href="" ><?php echo $fields['course_name']?></a>
+                <?php echo GetSta($fields['state']);?>
+            </td>
+            <td align="center">
+                <a href="" ><?php echo $fields['name']?></a>
             </td>
             <td align="center">
                 <?php echo $fields['days']?>
@@ -163,19 +167,19 @@ foreach( $blockValue as $key=>$fields )
                 <?php echo $fields['co_info']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['job'])?>
+                <?php echo $fields['job']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['co_name'])?>
+                <?php echo $fields['co_name']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['email'])?>
+                <?php echo $fields['email']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['co_addr'])?>
+                <?php echo $fields['co_addr']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['postcode'])?>
+                <?php echo $fields['postcode']?>
             </td>
         </tr>
         <?php

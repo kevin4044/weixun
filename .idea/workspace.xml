@@ -5,12 +5,12 @@
     <ignored path="weixun.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/list_personal_course.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380440868144" ignored="false" />
-    <file path="/style.css" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290689857" ignored="false" />
-    <file path="/dummy.xml" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380648943253" ignored="false" />
-    <file path="/conntact_us.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380442031770" ignored="false" />
+    <file path="/style.css" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381398349673" ignored="false" />
+    <file path="/dummy.xml" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381391996302" ignored="false" />
+    <file path="/conntact_us.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381372959276" ignored="false" />
     <file path="$PROJECT_DIR$/../kinghome/xakadmin/index.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380462393163" ignored="false" />
     <file path="/index.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380449890232" ignored="false" />
-    <file path="$PROJECT_DIR$/../kinghome/functions/common.inc.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380465698553" ignored="false" />
+    <file path="$PROJECT_DIR$/../kinghome/functions/common.inc.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381386080173" ignored="false" />
     <file path="$PROJECT_DIR$/../kinghome/xakadmin/login.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380464213016" ignored="false" />
     <file path="/login.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380463377004" ignored="false" />
     <file path="$PROJECT_DIR$/../kinghome/xakadmin/content_batchup_action.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380462285980" ignored="false" />
@@ -30,28 +30,57 @@
     <file path="$PROJECT_DIR$/../web/xakadmin/inc/xmenu9.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380610416452" ignored="false" />
     <file path="$PROJECT_DIR$/../web/templets/module/shops_action_payment.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380611063612" ignored="false" />
     <file path="/form.html" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380612516179" ignored="false" />
-    <file path="/form.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381140357562" ignored="false" />
-    <file path="/form.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381227417615" ignored="false" />
-    <file path="/article_course.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380649056242" ignored="false" />
+    <file path="/form.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381305038601" ignored="false" />
+    <file path="/form.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381305432433" ignored="false" />
+    <file path="/article_course.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381372809218" ignored="false" />
     <file path="/xaksql.class.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1380720135739" ignored="false" />
-    <file path="/common.js" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381223091661" ignored="false" />
-    <file path="/buy_action.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381226745692" ignored="false" />
+    <file path="/common.js" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381389450392" ignored="false" />
+    <file path="/buy_action.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381386925927" ignored="false" />
     <file path="$PROJECT_DIR$/../web/module/carbuyaction.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381148595573" ignored="false" />
     <file path="/Dummy.txt" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381139987960" ignored="false" />
-    <file path="$PROJECT_DIR$/../xyj/templets/xak/head.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381209789704" ignored="false" />
-    <file path="$PROJECT_DIR$/../xyj/templets/style/style.css" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290689857" ignored="false" />
-    <file path="/head.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381209874865" ignored="false" />
-    <file path="$PROJECT_DIR$/../xyj/templets/xak/client_case_list.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381212054561" ignored="false" />
+    <file path="$PROJECT_DIR$/../xyj/templets/xak/head.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381311690949" ignored="false" />
+    <file path="$PROJECT_DIR$/../xyj/templets/style/style.css" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381312128138" ignored="false" />
+    <file path="/head.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381399689991" ignored="false" />
+    <file path="$PROJECT_DIR$/../xyj/templets/xak/client_case_list.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381298658145" ignored="false" />
     <file path="/xmenu9.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381217995065" ignored="false" />
-    <file path="/shops_operations.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381225968339" ignored="false" />
-    <file path="/shops_operations.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381225915634" ignored="false" />
-    <file path="/shops_op_enterprise.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381221375107" ignored="false" />
-    <file path="/shops_op_personal.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381221976830" ignored="false" />
+    <file path="/shops_operations.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381310391063" ignored="false" />
+    <file path="/shops_operations.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381310692685" ignored="false" />
+    <file path="/shops_op_enterprise.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381310746971" ignored="false" />
+    <file path="/shops_op_personal.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381310838511" ignored="false" />
     <file path="/list_teachers.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381227758813" ignored="false" />
     <file path="$PROJECT_DIR$/../xyj/templets/xak/footer.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290536370" ignored="false" />
-    <file path="/footer.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290536370" ignored="false" />
+    <file path="/footer.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381377678793" ignored="false" />
     <file path="$PROJECT_DIR$/../xyj/module/product_list.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290809891" ignored="false" />
     <file path="/product_list.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381290808640" ignored="false" />
+    <file path="$PROJECT_DIR$/../kinghome/templets/module/carbuyaction.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381296474045" ignored="false" />
+    <file path="/form_enterprise.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381374732056" ignored="false" />
+    <file path="/form_personal.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381387625070" ignored="false" />
+    <file path="/client_case_list.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381298657283" ignored="false" />
+    <file path="$PROJECT_DIR$/config/tplcache/form_83a81589903e390d75cb3103.inc" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381299377623" ignored="false" />
+    <file path="/sidebar.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381375058771" ignored="false" />
+    <file path="$PROJECT_DIR$/../xyj/templets/style/js/langugue.js" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381311908611" ignored="false" />
+    <file path="/langugue.js" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381311906243" ignored="false" />
+    <file path="/index.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381393016196" ignored="false" />
+    <file path="/extend.func.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381371373288" ignored="false" />
+    <file path="$PROJECT_DIR$/config/tplcache/article_course.htmb0f960b9a0c3c7c0.inc" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381372822132" ignored="false" />
+    <file path="/list_article.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381373499533" ignored="false" />
+    <file path="/article_article.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381373927675" ignored="false" />
+    <file path="/index_course.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381374915634" ignored="false" />
+    <file path="/search.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381393392935" ignored="false" />
+    <file path="$PROJECT_DIR$/../zilupeizhai/templets/xak/search.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381375402463" ignored="false" />
+    <file path="/email_tree.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381399089654" ignored="false" />
+    <file path="/form_teacher.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381378161097" ignored="false" />
+    <file path="/email_teacher.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381399145965" ignored="false" />
+    <file path="$PROJECT_DIR$/../kinghome/module/carbuyaction.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381387103179" ignored="false" />
+    <file path="/carbuyaction.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381380585443" ignored="false" />
+    <file path="$PROJECT_DIR$/config/tplcache/form_personal_c95c3f3f494bb5f836604dd2.inc" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381387683053" ignored="false" />
+    <file path="/alipay.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381384911651" ignored="false" />
+    <file path="/article_teachers.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381395670148" ignored="false" />
+    <file path="/list_course.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381398610327" ignored="false" />
+    <file path="/index_image.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381395507320" ignored="false" />
+    <file path="/list_image.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381395695246" ignored="false" />
+    <file path="$PROJECT_DIR$/config/config.cache.inc.php" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381399171720" ignored="false" />
+    <file path="/tree.htm" changelist="7922ecb0-f037-4580-965f-76499f04325b" time="1381399562372" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +93,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -97,41 +131,335 @@
         <favorite_root url="file://$PROJECT_DIR$/templets/xak/personal_course_article.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
         <favorite_root url="file://$PROJECT_DIR$/templets/xak/enterprise_course_article.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       </favorite_root>
+      <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets" module="weixun" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/lurd" module="weixun" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/lurd/lurd-add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/lurd/lurd-edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/lurd/lurd-list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/frame.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/login.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ad_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_url.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/erradd.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/header.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu2.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu3.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu4.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu5.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu6.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu7.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu8.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/xmenu9.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ad_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ad_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_view.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/winmode.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ask_type.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_url_2.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_post.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/imagecut.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/log_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/pic_view.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/rpad_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/rpad_del.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_data.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_info.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_safe.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_task.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/tag_test.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/tpl_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/vote_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/album_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ask_admin.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/baidunews.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_config.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_export.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/file_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_send.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/media_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_pm.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mytag_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/plus_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/plus_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/recycling.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/rpad_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/rpad_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_group.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/tags_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/video_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/vote_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/vote_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/album_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/ask_answer.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/cards_make.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/cards_type.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_tj.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_user.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index_body.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/media_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/media_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mynews_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mytag_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mytag_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/video_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/adtype_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_att.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/file_upload.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_store.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index_menu2.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_js.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_rank.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_type.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_view.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/module_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/module_help.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/module_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/module_make.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mynews_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mynews_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/plus_bshare.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_books.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_payment.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/tpl_newfile.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/vote_select.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/archives_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_menu.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_add_step0.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_add_step1.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_add_step2.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_test_rule.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_trimrule.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/freelist_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_notice.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_getfile.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_all.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_rss.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_pmall.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_pmone.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/public_guide.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_cache_up.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_info_pay.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_passport.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_safetest.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_task_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_verifies.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/templets_one.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/tpl_edit_tag.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/vote_getcode.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/winmodesmall.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/action_search.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/archives_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/cards_manmage.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_menu2.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_field_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/feedback_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/feedback_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/file_pic_view.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/freelist_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/freelist_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_threads.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_type_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_spec.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_scores.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/module_upload.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_catalog.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_group_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_info_mark.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_multiserv.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_sql_query.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_task_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_i_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_s_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_field_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/friendlink_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_title_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_type_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_type_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_story.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makeremote_all.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_toadmin.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_delivery.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_admin_user.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_group_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/archives_sg_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_gather_start.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_sg_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/friendlink_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/friendlink_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/friendlink_type.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/group_guestbook.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index_body_move.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_title_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_title_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_title_send.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mytag_tag_guide.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/stepselect_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_add_photo.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_data_revert.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/api_ucenter_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/archives_sg_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_batch_up.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/data_switch_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/diy_edit_content.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/file_manage_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mail_file_manage.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_feed_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_guestbook.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_model_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_mood_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_operations.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_photo_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_data_replace.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/templets_default.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/templets_one_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_test_same.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/catalog_add_quick.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_add_step1_test.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/co_add_step2_test.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index_body_showad.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_archives.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_freelist.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_homepage.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_model_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_model_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_operations.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/plus_bshare_state.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_op_personal.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_add_content.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_admin_user_tj.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/templets_one_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/makehtml_map_guide.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mytag_tag_guide_ok.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_content_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_list_chapter.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_list_content.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_admin_user_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/templets_tagsource.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/api_ucenter_install.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_result_same.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/content_select_list.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/index_body_showauth.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_field_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_op_enterprise.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/stepselect_showajax.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_feedback_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/story_feedback_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_admin_user_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_payment_install.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_verifies_manage.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_verifies_verify.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_field_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/search_keywords_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/update_guide_getlist.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_keywords_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_keywords_make.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_operations_cart.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/sys_verifies_getfiles.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/update_guide_getfiles.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_coonepage_rule.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_model_field_add.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/mychannel_modifysearch.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_keywords_select.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/member_model_field_edit.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/article_description_main.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/xakadmin/templets/shops_operations_userinfo.htm" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
     </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="shops_operations.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xakadmin/shops_operations.php">
+      <file leaf-file-name="footer.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/xak/footer.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="91" selection-start="2457" selection-end="2464" vertical-scroll-proportion="-0.7586207">
+            <state line="31" column="31" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-6.827586">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.htm" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="email_tree.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/email_tree.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="17" selection-start="2617" selection-end="2617" vertical-scroll-proportion="-1.7241379">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.htm" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templets/xak/form.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="2725" selection-end="2725" vertical-scroll-proportion="0.9626308">
+            <state line="249" column="0" selection-start="8839" selection-end="8839" vertical-scroll-proportion="-13.655172">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_teachers.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/xak/list_teachers.htm">
+      <file leaf-file-name="email_teacher.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/email_teacher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-2.275862">
+            <state line="80" column="0" selection-start="1794" selection-end="1794" vertical-scroll-proportion="-15.931034">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/xak/index.htm">
+      <file leaf-file-name="tree.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/xak/tree.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="43" selection-start="4719" selection-end="4719" vertical-scroll-proportion="-13.965517">
+            <state line="207" column="0" selection-start="8575" selection-end="8575" vertical-scroll-proportion="-7.137931">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/xak/head.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="38" selection-start="670" selection-end="670" vertical-scroll-proportion="-11.379311">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buy_action.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/buy_action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="23" selection-start="471" selection-end="473" vertical-scroll-proportion="-1.0200927">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/style/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="904" column="0" selection-start="13424" selection-end="13424" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,34 +468,16 @@
       <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templets/style/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/form.php">
+      <file leaf-file-name="excanvas.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmp/js/excanvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="38" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy_action.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/buy_action.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="8" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shops_operations.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xakadmin/templets/shops_operations.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="36" selection-start="5306" selection-end="5306" vertical-scroll-proportion="0.0">
+            <state line="153" column="17" selection-start="5239" selection-end="5239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,22 +493,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templets/xak/article_course.htm" />
-        <option value="$PROJECT_DIR$/functions/common.inc.php" />
-        <option value="$PROJECT_DIR$/functions/xaksql.class.php" />
-        <option value="$PROJECT_DIR$/module/form.php" />
-        <option value="$PROJECT_DIR$/templets/xak/article_article.htm" />
-        <option value="$PROJECT_DIR$/templets/style/style.css" />
         <option value="$PROJECT_DIR$/xakadmin/inc/xmenu9.php" />
-        <option value="$PROJECT_DIR$/xakadmin/templets/shops_op_enterprise.htm" />
-        <option value="$PROJECT_DIR$/xakadmin/templets/shops_op_personal.htm" />
-        <option value="$PROJECT_DIR$/templets/style/js/common.js" />
-        <option value="$PROJECT_DIR$/xakadmin/templets/shops_operations.htm" />
-        <option value="$PROJECT_DIR$/xakadmin/shops_operations.php" />
-        <option value="$PROJECT_DIR$/module/buy_action.php" />
-        <option value="$PROJECT_DIR$/templets/xak/list_teachers.htm" />
-        <option value="$PROJECT_DIR$/templets/xak/index.htm" />
         <option value="$PROJECT_DIR$/templets/xak/form.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/index_image.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/article_teachers.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/list_image.htm" />
+        <option value="$PROJECT_DIR$/templets/style/style.css" />
+        <option value="$PROJECT_DIR$/templets/xak/list_course.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/enterprise_course_article.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/footer.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/index.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/list_teachers.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/personal_course_article.htm" />
+        <option value="$PROJECT_DIR$/module/email_tree.php" />
+        <option value="$PROJECT_DIR$/module/email_teacher.php" />
+        <option value="$PROJECT_DIR$/templets/xak/tree.htm" />
+        <option value="$PROJECT_DIR$/templets/xak/head.htm" />
       </list>
     </option>
   </component>
@@ -271,25 +581,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xakadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xakadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templets" />
+              <option name="myItemId" value="xinwenzixun" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,52 +631,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Configurable.PHP.Servers" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xyj" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/payment/alipay.php" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -395,6 +658,10 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
@@ -403,6 +670,12 @@
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="0" />
@@ -433,24 +706,44 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25194073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="46" y="167" width="468" height="895" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16499282" sideWeight="0.67448276" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12551723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.118364416" sideWeight="0.87448275" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08608321" sideWeight="0.67172414" order="1" side_tool="false" content_ui="tabs" x="46" y="167" width="468" height="895" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13629842" sideWeight="0.67310345" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16499282" sideWeight="0.32413793" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13629842" sideWeight="0.32689655" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -519,100 +812,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templets/xak/article_article.htm">
+    <entry file="file://$PROJECT_DIR$/functions/json.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/templets/xmenu6.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="6" selection-start="1922" selection-end="1922" vertical-scroll-proportion="-17.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/templets/xmenu9.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="35" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-16.689655" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/xmenu9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="112" selection-end="112" vertical-scroll-proportion="-2.275862" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/inc/xmenu9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-5.9310346" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/templets/shops_op_enterprise.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="14" selection-start="0" selection-end="8239" vertical-scroll-proportion="-5.172414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/templets/shops_op_personal.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="45" selection-start="6710" selection-end="6710" vertical-scroll-proportion="-13.206897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/style/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
+        <state line="763" column="8" selection-start="32772" selection-end="32772" vertical-scroll-proportion="-4.862069">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/templets/shops_operations.htm">
+    <entry file="file://$PROJECT_DIR$/templets/xak/list_course.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="36" selection-start="5306" selection-end="5306" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="100" column="0" selection-start="4446" selection-end="4446" vertical-scroll-proportion="-9.862069">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/form.php">
+    <entry file="file://$PROJECT_DIR$/templets/xak/enterprise_course_article.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xakadmin/shops_operations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="91" selection-start="2457" selection-end="2464" vertical-scroll-proportion="-0.7586207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/buy_action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="8" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/xak/footer.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="624" selection-end="624" vertical-scroll-proportion="0.49327356">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/xak/list_teachers.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-2.275862">
+        <state line="77" column="0" selection-start="3197" selection-end="3197" vertical-scroll-proportion="-5.448276">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templets/xak/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="43" selection-start="4719" selection-end="4719" vertical-scroll-proportion="-13.965517">
+        <state line="63" column="12" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-5.448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/xak/list_teachers.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="835" selection-end="835" vertical-scroll-proportion="-5.448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/xak/personal_course_article.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="3197" selection-end="3197" vertical-scroll-proportion="-5.4827585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/js/excanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="17" selection-start="5239" selection-end="5239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/xak/footer.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="31" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-6.827586">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/email_tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="17" selection-start="2617" selection-end="2617" vertical-scroll-proportion="-1.7241379">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/email_teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="1794" selection-end="1794" vertical-scroll-proportion="-15.931034">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templets/xak/form.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="2725" selection-end="2725" vertical-scroll-proportion="0.9626308">
+        <state line="249" column="0" selection-start="8839" selection-end="8839" vertical-scroll-proportion="-13.655172">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/style/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="904" column="0" selection-start="13424" selection-end="13424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/xak/tree.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="0" selection-start="8575" selection-end="8575" vertical-scroll-proportion="-7.137931">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/xak/head.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="670" selection-end="670" vertical-scroll-proportion="-11.379311">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/buy_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="471" selection-end="473" vertical-scroll-proportion="-1.0200927">
           <folding />
         </state>
       </provider>

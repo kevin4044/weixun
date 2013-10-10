@@ -157,4 +157,6 @@ $cfg_kf = '';
 $smtp_email = '';
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
+$tree_mail = '511639938@qq.com';
+$teacher_co_email = '511639938@qq.com';
 ?>

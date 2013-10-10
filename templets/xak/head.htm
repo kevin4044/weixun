@@ -9,12 +9,34 @@
     <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
     <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
     <div class="menu">
+        <!--todo:add a highlight-->
         <ul>
-            <li class="cc"><a href="#">首页</a></li>
+            <li class="cc"><a href="/">首页</a></li>
             {xak:channel type='top'}
-            <li><a href="[field:typelink/]">[field:typename/]</a></li>
+            <li><a href="[field:typeurl/]">[field:typename/]</a></li>
             {/xak:channel}
         </ul>
     </div>
 </div>
-
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            {xak:rpad name='kf_tel'/}
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
+</div>

@@ -1,26 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>许愿树_微训</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="/templets/xak/style/system.css" rel="stylesheet" media="screen" type="text/css" />
+    <meta charset='utf-8'/>
+    <title>许愿树_微训</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="http://www.xak.cn" />
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
 </head>
-<body class="channel">
+<body>
 <div class="top">
     <div class="ming">您好,欢迎来到微训培训！</div>
     <div class="maa">
         <ul>
             <li><a href="/">返回首页</a></li>
-            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.6','微训')">加入收藏</a></li>
+            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.10:9999','微训')">加入收藏</a></li>
         </ul>
     </div>
     <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
     <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
     <div class="menu">
         <ul>
-            <li class="cc"><a href="#">首页</a></li>
+            <li class="cc"><a href="/">首页</a></li>
             
             <li><a href="/public/">公开课程</a></li>
             
@@ -37,108 +40,241 @@
         </ul>
     </div>
 </div>
-
-
-<!-- /header -->
-<div class="w960 center clear mt1">
- <div class="pleft">
-  <div class="flashnews">
-   <script language='javascript'>
-linkarr = new Array();
-picarr = new Array();
-textarr = new Array();
-var swf_width=280;
-var swf_height=192;
-var files = "";
-var links = "";
-var texts = "";
-//这里设置调用标记
-
-for(i=1;i<picarr.length;i++){
-  if(files=="") files = picarr[i];
-  else files += "|"+picarr[i];
-}
-for(i=1;i<linkarr.length;i++){
-  if(links=="") links = linkarr[i];
-  else links += "|"+linkarr[i];
-}
-for(i=1;i<textarr.length;i++){
-  if(texts=="") texts = textarr[i];
-  else texts += "|"+textarr[i];
-}
-document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
-document.write('<param name="movie" value="/templets/xak/images/bcastr3.swf"><param name="quality" value="high">');
-document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
-document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
-document.write('<embed src="/templets/xak/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
-</script>
-  </div>
-  <!-- /flashnews -->
-  <div class="topcommand">
-   <dl class="tbox">
-    <dt><strong>频道头条</strong></dt>
-    <dd>
-     <div class="onenews">  </div>
-     <!-- /onenews -->
-     <ul class="c2 ico1">
-      
-     </ul>
-    </dd>
-   </dl>
-  </div>
-  <!-- /topcommand -->
-  <div class="picnews mt1">
-   <dl class="tbox">
-    <dt><strong>图文资讯</strong></dt>
-    <dd>
-     <ul class="e1">
-      
-     </ul>
-    </dd>
-   </dl>
-  </div>
-  <!-- /picnews -->
-  <div id="leftAD1" style="margin:10px auto"><img src="/ad1.jpg" /></div>
-  <div class="listbox">  </div>
-  <!-- /listbox -->
- </div>
- <!-- /pleft -->
- <div class="pright">
-  <div class="commend">
-   <dl class="tbox light">
-    <dt class='light'><strong>推荐内容</strong></dt>
-    <dd class='light'>
-     <ul class="d4">
-      
-     </ul>
-    </dd>
-   </dl>
-  </div>
-  <!-- /commend -->
-  <div id="conrightAD" style="margin:10px auto"></div>
-  <div class="hot mt1">
-   <dl class="tbox light">
-    <dt class='light'><strong>热点内容</strong></dt>
-    <dd class='light'>
-     <ul class="c1 ico2">
-      
-     </ul>
-    </dd>
-   </dl>
-  </div>
-  <div id="listRtPicAD2" style="margin:10px auto"></div>
- </div>
- <!-- /pright -->
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            <strong><span style="color:#f20f0f;"><span style="font-size:16px;">0755-82731880</span></span></strong>
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
 </div>
-<div id="footAD" style="margin:10px auto; width:726px"></div>
+
+<div class="main">
+    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.10:9999/'>首页</a> > <a href='/wish_list/'>许愿树</a></div>
+    <div class="xu"></div>
+    <div class="my">
+     <div class="sm">请大家点击许愿树的小标许下你们诚挚的心愿，可以对任何人，说任何美好的愿望。当然，你也可以在这里大胆
+地说出深藏已久的爱恋情怀，或者是对亲人的道歉话语。只要你勇敢地说出了自己的心里话，我们相信
+被祝福的那个人一定能够感应到你的心意！
+操作步骤：
+1.请大家点击许愿树的小标许下你们诚挚的心愿
+2.如果您想查看每个星座的愿望请点击每个星座的小图标</div>
+     <div class="dw"></div>
+    </div>
+    <div class="xy">
+      <div class="xuyuantop"></div>
+      <div class="xuyuanzhong">
+        <div class="xys">
+            <img src="/images/common/xuyuanshu.jpg" alt="" />
+            <a href="javascript:make_wish();">
+                <div class="f-click"></div>
+            </a>
+        </div>
+      </div>
+      <div class="xuyuandi"></div>
+     </div>
+     <div class="g-pop-form">
+     	
+      <div id='xys' class="nn">
+        <div class="nntt">
+           <div class="baoo">许愿</div>
+            <div style="float: right;line-height:32px;margin-right: 20px;cursor: pointer;color: white" onclick="$('#xys').toggle();">
+                关闭
+            </div>
+        </div>
+        <div class="nnz">
+        <!--TODO:regular expression-->
+           <script language = "JavaScript"> 
+function CheckForm()
+{
+  if (document.myform.name.value=="")
+  {
+    alert("请输入您的姓名!");
+	document.myform.name.focus();
+	return false;
+  }
+  if (document.myform.telephone.value=="")
+  {
+    alert("请输入您的电话!");
+	document.myform.telephone.focus();
+	return false;
+  }
+  if (document.myform.email.value=="")
+  {
+    alert("请输入您的邮箱地址!");
+	document.myform.email.focus();
+	return false;
+  }
+  if (document.myform.content.value=="")
+  {
+    alert("请输入反馈内容!");
+	document.myform.content.focus();
+	return false;
+  } 
+  if (document.myform.vdcode.value=="")
+  {
+    alert("请输入验证码!");
+	document.myform.vdcode.focus();
+	return false;
+  }
+    $('#xys').hide();
+}
+</script>
+
+<form name="myform" method="post" action="/module/email.php"  onsubmit="return CheckForm();">
+                    <table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
+                    <tr>
+                            <td height="40" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                             <td height="25" align="right">姓名&nbsp;</td>
+                            <td width="30%" height="25" align="left">
+                                <input class="input" name="name" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        
+
+                        <tr>
+                            <td width="15%" height="25" align="right" >联系电话：&nbsp;</td>
+                            <td height="25" align="left">
+                                <input class="input" name="tel" type="text" size="25" />
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                            
+                        <tr>
+                            <td width="15%" height=23 align="right" >电子邮箱:&nbsp;</td>
+                            <td height=23 align="left">
+                                <input class="input" name="email" type="text" size="25" />
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                           
+                        <tr>
+                            <td height="25" align="right" >培训课题:&nbsp;</td>
+                            <td height="25"><input class="input" name="subject" type="text" size="25" />
+                            &nbsp;<font color="red">*</font></td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >培训方向：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="target" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >培训课程:&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="course" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >期望开课地点：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="location" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        
+
+                        <tr>
+                        	<!--TODO: date picker-->
+                            <td height="25" align="right" >期望开课日期：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="date" type="date" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td height="25" align="right" >其他说明：&nbsp;</td>
+                            <td height="25">
+                                <input class="input" name="other_info" type="text" size="25" /> 
+                                &nbsp;<font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+			           <tr>
+                            <td width="15%" height="25" align="right" >验证码：&nbsp;</td>
+                            <td height="25"  align="left">
+                                <input class="input" name="vdcode" type="text" size="10" />
+				<img align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？" src="/functions/vdimgck.php"/>
+                                <font color="red">*</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10" colspan="2" style="line-height:10px;" >&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="15%">&nbsp;</td>
+                            <td>
+                                <input class="submit" type="submit" value="" name="submitsure">
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+           
+           
+        </div>
+      </div>
+     	
+     </div><!--endof g-pop-form-->
+     
+    </div> 
 <div class="footer">
     <div class="mvv">
         <ul>
             <li><a href="/public/">公开课程</a></li>
             <li><a href="/enterprice/">企业内训</a></li>
             <li><a href="/personal/">个人微训</a></li>
-            <!--TODO:报名表单设置一个php，如有选择则XXX如果没有选择则所有未选-->
-            <li><a href="#">在线报名</a></li>
+            <li><a href="/jiangshihezuo/">在线报名</a></li>
             <li><a href="/teachers/">讲师风采</a></li>
             <li><a href="/hezuokehu/">典型客户</a></li>
             <li class="s"><a href="/conntact_us/">联系我们</a></li>
@@ -166,6 +302,5 @@ document.write('<embed src="/templets/xak/images/bcastr3.swf" wmode="opaque" Fla
 
 
 
-<!-- /footer -->
 </body>
 </html>

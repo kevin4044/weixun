@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>{xak:global.cfg_webname/}</title>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
     <meta name="description" content="{xak:global.cfg_description/}"/>
     <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
     <meta name="author" content="http://www.xak.cn"/>
@@ -75,7 +75,6 @@
                         <td>课程类型：{xak:field.id function='GetTopInfo(@me,0,0)'/}</td>
                     </tr>
                     <tr>
-                        <!--TODO-->
                         <td >课程时间：<span id="set_time"></span>天 </td>
                         <td>开课地区：{xak:field.location/}</td>
                     </tr>

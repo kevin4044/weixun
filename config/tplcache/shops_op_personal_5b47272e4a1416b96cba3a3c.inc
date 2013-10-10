@@ -111,15 +111,16 @@ $fields = array();
     </tr>
     <tr bgcolor="#F9FCFD">
         <td width="8%" align="center">选择</td>
-        <td width="25%" align="center">订单号</td>
+        <td width="10%" align="center">订单号</td>
+        <td align="center">状态</td>
         <td align="center">课程名</td>
-        <td align="center">费用</td>
-        <td width="22%" align="center">生成日期</td>
+        <td width="10%" align="center">费用</td>
+        <td width="10%" align="center">生成日期</td>
         <td align="center">姓名</td>
         <td align="center">报名人数</td>
         <td align="center">电话</td>
         <td align="center">负责人email</td>
-        <td align="center">其他说明</td>
+        <td width="20%" align="center">其他说明</td>
     </tr>
     <form name="form1">
         <?php
@@ -137,7 +138,10 @@ foreach( $blockValue as $key=>$fields )
                 <?php echo $fields['oid'];?>
             </td>
             <td align="center">
-                <a href="" ><?php echo $fields['course_name']?></a>
+                <?php echo GetSta($fields['state']);?>
+            </td>
+            <td align="center">
+                <a href="" ><?php echo $fields['name']?></a>
             </td>
             <td align="center">
                 <?php echo $fields['price']?>
@@ -147,7 +151,7 @@ foreach( $blockValue as $key=>$fields )
                 (<font color="#FF0000"><?php echo floorTime(time()-$fields['stime'],$fields['stime']); ?></font>)
             </td>
             <td align="center">
-                <?php echo $fields['name']?>
+                <?php echo $fields['client_name']?>
             </td>
             <td align="center">
                 <?php echo $fields['people_count']?>
@@ -159,7 +163,7 @@ foreach( $blockValue as $key=>$fields )
                 <?php echo $fields['email']?>
             </td>
             <td align="center">
-                <?php echo GetSta($fields['content'])?>
+                <?php echo $fields['content']?>
             </td>
         </tr>
         <?php

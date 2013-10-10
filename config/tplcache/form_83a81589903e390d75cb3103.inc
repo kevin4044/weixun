@@ -19,64 +19,9 @@ $fields = array();
 ?>
 <div class="main">
 <div class="weizhi">您现在所在位置：订单填写</div>
-<div class="leftt">
-    <div class="gongkaike">
-        <div class="shang">
-            <div class="kecheng">公开课程</div>
-        </div>
-        <div class="zhong">
-            <div class="kee">
-                <ul>
-                    <?php
-$atts = array();
-$atts['tagname'] = 'channel';
-$atts['typid'] = '1';
-$atts['type'] = 'son';
-$blockValue = MakePublicTag($atts,$this->refObj,$fields); 
-if(is_array($blockValue) && count($blockValue) > 0){
-foreach( $blockValue as $key=>$fields )
-{
+<?php
+   pasterTempletDiy("xak/sidebar.htm");
 ?>
-                    <li><a href="[field:typeurl/]">[field:typename/]</a></li>
-                    <?php
-}
-}
-?>
-                </ul>
-            </div>
-        </div>
-        <div class="di"></div>
-    </div>
-    <div class="jian">
-        <div class="ts">
-            <div class="kecheng">课程推荐</div>
-        </div>
-        <div class="tz">
-            <div class="mdd">
-                <ul>
-                    <?php
-$atts = array();
-$atts['tagname'] = 'arclist';
-$atts['typeid'] = '1,2,3';
-$atts['flag'] = 'c';
-$atts['row'] = '7';
-$atts['orderby'] = 'pubdate';
-$blockValue = MakePublicTag($atts,$this->refObj,$fields); 
-if(is_array($blockValue) && count($blockValue) > 0){
-foreach( $blockValue as $key=>$fields )
-{
-?>
-                    <li><a href="[field:arcurl/]">[field:title/]</a></li>
-                    <?php
-}
-}
-?>
-                </ul>
-            </div>
-        </div>
-        <div class="td"></div>
-    </div>
-</div>
 <div class="rightt">
 
 
@@ -93,7 +38,6 @@ foreach( $blockValue as $key=>$fields )
      */
     function ajax_call_back(data) {
         $('input').attr('disabled','disabled');
-        $('#pay_window').show();
         $('.submit').hide();
         $('.submitt').hide();
         $('#vdcode').hide();
@@ -112,6 +56,8 @@ foreach( $blockValue as $key=>$fields )
 <form id="enterprise_form" name="myform" method="post" action="/module/buy_action.php" >
     <input name="arcid" type="hidden" size="25"
            value=<?php echo $GLOBALS['_vars']['arcid']; ?>>
+    <input name="topid" type="hidden" size="25"
+           value=<?php echo $GLOBALS['_vars']['topid']; ?>>
     <table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
         <tr>
             <td height="40" colspan="2" style="line-height:10px;">&nbsp;</td>
@@ -121,7 +67,7 @@ foreach( $blockValue as $key=>$fields )
             <td height="25" align="right">课程名：&nbsp;</td>
             <td width="30%" height="25" align="left">
                 <input class="input" name="course_name" readonly="readonly" type="text" size="25"
-                    value=<?php echo $GLOBALS['_vars']['name']; ?>>
+                    value=<?php echo $GLOBALS['_vars']['data']['name']; ?>>
                 &nbsp;<font color="red">*</font>
             </td>
         </tr>
@@ -134,7 +80,7 @@ foreach( $blockValue as $key=>$fields )
             <td width="15%" height="25" align="right">开课时间：&nbsp;</td>
             <td height="25" align="left">
                 <input class="input" name="course_start_time" readonly="readonly" type="text" size="25"
-                   value=<?php echo MyDate('',$GLOBALS['_vars']['start_date']); ?>/>
+                   value=<?php echo MyDate('',$GLOBALS['_vars']['data']['start_date']); ?>/>
                 &nbsp;<font color="red">*</font>
             </td>
         </tr>
@@ -146,7 +92,7 @@ foreach( $blockValue as $key=>$fields )
             <td width="15%" height=23 align="right">开课地点：&nbsp;</td>
             <td height=23 align="left">
                 <input class="input" name="course_location" readonly="readonly" type="text" size="25"
-                       value=<?php echo $GLOBALS['_vars']['location']; ?>>
+                       value=<?php echo $GLOBALS['_vars']['data']['location']; ?>>
                 &nbsp;<font color="red">*</font>
             </td>
         </tr>
@@ -157,7 +103,7 @@ foreach( $blockValue as $key=>$fields )
         <tr>
             <td height="25" align="right">费用：&nbsp;</td>
             <td height="25"><input class="input" name="course_price" readonly="readonly" type="text" size="25"
-                   value=<?php echo $GLOBALS['_vars']['price']; ?>>
+                   value=<?php echo $GLOBALS['_vars']['data']['price']; ?>>
                 &nbsp;<font color="red">*</font></td>
         </tr>
         <tr>
@@ -179,7 +125,7 @@ foreach( $blockValue as $key=>$fields )
         <tr class="f_personal">
             <td height="25" align="right">报名人数：&nbsp;</td>
             <td height="25">
-                <input class="input" name="client_count" type="text" size="25"/>
+                <input class="input" name="people_count" type="text" size="25"/>
                 &nbsp;<font color="red">*</font>
             </td>
         </tr>
@@ -321,12 +267,7 @@ foreach( $blockValue as $key=>$fields )
 </div>
 <div class="nnd"></div>
 </div>
-<div class="pay_window">
-    <h4>请您在新打开的支付页面上完成支付</h4>
-    <p>支付完成前请不要关闭此窗口</p>
-    <input id="success" type="button" name='finish' value="支付成功"/>
-    <input id="failed" type="button" name='erro' value="支付失败"/>
-</div>
+
 
 </div>
 </div>

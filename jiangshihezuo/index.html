@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>订单填写_微训</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="http://www.xak.cn"/>
+    <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="/templets/style/js/common.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="ming">您好,欢迎来到微训培训！</div>
+    <div class="maa">
+        <ul>
+            <li><a href="/">返回首页</a></li>
+            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.10:9999','微训')">加入收藏</a></li>
+        </ul>
+    </div>
+    <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
+    <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
+    <div class="menu">
+        <ul>
+            <li class="cc"><a href="/">首页</a></li>
+            
+            <li><a href="/public/">公开课程</a></li>
+            
+            <li><a href="/enterprice/">企业内训</a></li>
+            
+            <li><a href="/personal/">个人微训</a></li>
+            
+            <li><a href="/teachers/">师资队伍</a></li>
+            
+            <li><a href="/wish_list/">许愿树</a></li>
+            
+            <li><a href="/conntact_us/">联系我们</a></li>
+            
+        </ul>
+    </div>
+</div>
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            <strong><span style="color:#f20f0f;"><span style="font-size:16px;">0755-82731880</span></span></strong>
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
+</div>
+
+<div class="main">
+<div class="weizhi">您现在所在位置：教师合作表单填写</div>
+<div class="leftt">
+    <div class="gongkaike">
+        <div class="shang">
+            <div class="kecheng">公开课程</div>
+        </div>
+        <div class="zhong">
+            <div class="kee">
+                <ul>
+                    
+                    <li><a href="/manufacture_manage/">生产管理</a></li>
+                    
+                    <li><a href="/financial_manage/">财务管理</a></li>
+                    
+                    <li><a href="/hr/">人力资源</a></li>
+                    
+                    <li><a href="/professional_quality/">职业素养</a></li>
+                    
+                    <li><a href="/commercial_estate/">商业地产</a></li>
+                    
+                    <li><a href="/international_trade/">国际贸易</a></li>
+                    
+                    <li><a href="/integrated_management/">综合管理</a></li>
+                    
+                    <li><a href="/client_service/">客户服务</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="di"></div>
+    </div>
+    <div class="jian">
+        <div class="ts">
+            <div class="kecheng">课程推荐</div>
+        </div>
+        <div class="tz">
+            <div class="mdd">
+                <ul>
+                    <li><a href="/personal/34.html">优质客户服务与客户投诉</a></li>
+<li><a href="/personal/33.html">管理者的沟通与影响技术</a></li>
+<li><a href="/personal/32.html">沟通艺术与关系协调实战</a></li>
+<li><a href="/personal/20.html">高级工商管理研究生课程</a></li>
+<li><a href="/personal/3.html">培训师培训2.0版</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="td"></div>
+    </div>
+</div>
+<div class="rightt">
+
+
+<div class="nn">
+<div class="nntt">
+    <div class="baoo">提交报名</div>
+</div>
+<div class="nnz">
+
+<script language="JavaScript">
+    /*
+     @describe form ajax callback
+     @param
+    function ajax_call_back(data) {
+        $('input').attr('disabled','disabled');
+        $('.submit').hide();
+        $('.submitt').hide();
+        $('#vdcode').hide();
+        $('td#pay_button').html(data);
+    }
+    var course_type = ;
+    $(document).ready(function(){
+        display_and_hide('tr.f_personal', 'tr.f_enterprise', course_type);
+        $('#enterprise_form').bind('submit',function(){
+            ajaxSubmit(this,ajax_call_back);
+            return false;
+        });
+    });
+     */
+</script>
+
+<form id="enterprise_form" name="myform" method="post" action="/module/email_teacher.php" >
+<table width="100%" border="0" align="center" cellPadding="5" cellSpacing="1">
+<tr>
+    <td height="40" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td height="25" align="right">姓名：&nbsp;</td>
+    <td width="30%" height="25" align="left">
+        <input class="input" name="teacher_name" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+
+<tr>
+    <td width="15%" height="25" align="right">联系电话：&nbsp;</td>
+    <td height="25" align="left">
+        <input class="input" name="teacher_tel" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td width="15%" height=23 align="right">电子邮箱：&nbsp;</td>
+    <td height=23 align="left">
+        <input class="input" name="teacher_email" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td height="25" align="right">
+        <label for="target">
+            拟培训方向：&nbsp;
+        </label>
+    </td>
+    <td height="25">
+        <select name="target" id="target">
+            <option value="公开课">公开课</option>
+            <option value="企业内训">企业内训</option>
+            <option value="个人微训">个人微训</option>
+        </select>
+        &nbsp;<font color="red">*</font></td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">拟培训费用：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="price" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">拟培训课题：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="subject" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">拟开课日期：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="course_date" type="date" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_personal">
+    <td height="25" align="right">拟培训时长：&nbsp;</td>
+    <td height="25">
+        <input class="input" name="course_length" type="text" size="25"/>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_personal">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+
+<tr class="f_enterprise">
+    <td height="25" align="right">课程简介：&nbsp;</td>
+    <td height="25">
+        <textarea class="input" name="course_intro" rows="8" cols="48"></textarea>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_enterprise">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr class="f_enterprise">
+    <td height="25" align="right">
+        <label for="teacher_intro">
+            自我简介：&nbsp;
+        </label>
+    </td>
+    <td height="25">
+        <textarea class="input" name="teacher_intro" rows="8" cols="48" id="teacher_intro"></textarea>
+        &nbsp;<font color="red">*</font>
+    </td>
+</tr>
+<tr class="f_enterprise">
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td width="15%" height="25" align="right">其他说明：&nbsp;</td>
+    <td height="25" align="left">
+        <textarea class="input" name="content" rows="8" cols="48"></textarea>
+
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+
+<tr>
+    <td width="15%" height="25" align="right">验证码：&nbsp;</td>
+    <td height="25" align="left">
+        <input id="vdcode" class="input" name="vdcode" type="text" size="10"/>
+        <img align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？"
+             src="/functions/vdimgck.php"/>
+        <font color="red">*</font>
+    </td>
+</tr>
+<tr>
+    <td height="10" colspan="2" style="line-height:10px;">&nbsp;</td>
+</tr>
+<tr>
+    <td width="15%">&nbsp;</td>
+    <td>
+        <input class="submit" type="submit"  name="submitsure">
+        <input class="submitt" type="reset"  name="Reset">
+    </td>
+</tr>
+<tr>
+    <td width="15%">&nbsp;</td>
+    <td id="pay_button">
+
+    </td>
+</tr>
+</table>
+</form>
+
+
+</div>
+<div class="nnd"></div>
+</div>
+
+
+</div>
+</div>
+<div class="footer">
+    <div class="mvv">
+        <ul>
+            <li><a href="/public/">公开课程</a></li>
+            <li><a href="/enterprice/">企业内训</a></li>
+            <li><a href="/personal/">个人微训</a></li>
+            <li><a href="/jiangshihezuo/">在线报名</a></li>
+            <li><a href="/teachers/">讲师风采</a></li>
+            <li><a href="/hezuokehu/">典型客户</a></li>
+            <li class="s"><a href="/conntact_us/">联系我们</a></li>
+        </ul>
+    </div>
+    <!--TODO-->
+    <div class="mxx">
+        <ul>
+            <li class="f"><a href="#">关于我们</a></li>
+            <li><a href="#">广告服务</a></li>
+            <li><a href="#">免责声明</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">网站导航</a></li>
+            <li><a href="#">版权信息</a></li>
+            <li><a href="#">诚征友情链接</a></li>
+        </ul>
+    </div>
+    <div class="banquan">深圳微训企业管理咨询有限公司旗下大型企业培训网站,是企业销售培训,中高层管理培训的首选供应商!<br />
+        上海：021-50594099 北京：010-58608281 深圳：0755-86386699 <全国客服热线：4008-978-5></全国客服热线：4008-978-5>58 企业QQ：4008978558 <br />
+        微训培训网版权所有，未经微训培训网，不得转载.          粤ICP备08003118号
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

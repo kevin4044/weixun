@@ -112,3 +112,7 @@ function ajaxSubmit(frm, fn) {
         success: fn
     });
 }
+
+function kf_toggle() {
+    $('div.KfMenu').toggle();
+}

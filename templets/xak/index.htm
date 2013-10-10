@@ -6,6 +6,7 @@
     <meta name="description" content="{xak:global.cfg_description/}" />
     <meta name="keywords" content="{xak:global.cfg_keywords/}" />
     <meta name="author" content="http://www.xak.cn" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css" />
     <script type="text/javascript" src="/templets/style/js/common.js"></script>
 </head>
@@ -51,7 +52,9 @@
                 {/xak:arclist}
             </ul>
         </div>
-        <div class="mo"><a href="#"><img src="/images/common/more.jpg" alt="" /></a></div>
+        {xak:type typeid='24'}
+        <div class="mo"><a href="[field:typelink/]"><img src="/images/common/more.jpg" alt="" /></a></div>
+        {/xak:type}
     </div>
     <div class="zixundi"></div>
 </div>
@@ -85,7 +88,9 @@
 </div>
 <div class="kong">
     <div class="gongtop"><div class="mt"><a href="#">公开课程</a></div>
-        <div class="more"><a href="#"><img src="/images/common/more.jpg" alt="" /></a></div>
+        {xak:type typeid='1'}
+        <div class="more"><a href="[field:typelink/]#"><img src="/images/common/more.jpg" alt="" /></a></div>
+        {/xak:type}
     </div>
     <div class="gongzhong">
         <table class="m-course">
@@ -113,8 +118,10 @@
 
 
 <div class="kong">
-    <div class="gongtop"><div class="mt"><a href="#">个人微信</a></div>
-        <div class="more"><a href="#"><img src="/images/common/more.jpg" alt="" /></a></div>
+    <div class="gongtop"><div class="mt"><a href="#">个人微训</a></div>
+        {xak:type typeid='3'}
+        <div class="more"><a href="[field:typelink/]"><img src="/images/common/more.jpg" alt="" /></a></div>
+        {/xak:type}
     </div>
     <div class="gongzhong">
         <table class="m-course">
@@ -160,7 +167,9 @@
     <div class="he">
         <div class="hes">
             <div class="hz">合作客户</div>
-            <div class="moo"><a href="#"><img src="/images/common/mmm.jpg" alt="" /></a></div>
+            {xak:type typeid='23'}
+            <div class="moo"><a href="[field:typelink/]"><img src="/images/common/mmm.jpg" alt="" /></a></div>
+            {/xak:type}
         </div>
         <div class="hez">
             {xak:arclist typeid='23' row='4'}

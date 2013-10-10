@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>{xak:global.cfg_webname/}</title>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
     <meta name="description" content="{xak:global.cfg_description/}"/>
     <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
     <meta name="author" content="http://www.xak.cn"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
     <script type="text/javascript" src="/templets/style/js/common.js"></script>
 </head>
@@ -36,7 +37,7 @@
             <div class="tz">
                 <div class="mdd">
                     <ul>
-                        {xak:arclist flag='c' row='7' orderby='pubdate'}
+                        {xak:arclist getall='1' typeid='1,2,3' flag='c' row='7' orderby='pubdate'}
                         <li><a href="[field:arcurl/]">[field:title/]</a></li>
                         {/xak:arclist}
                     </ul>
@@ -59,8 +60,9 @@
             <div class="ti">{xak:field.title/}</div>
             <script type="text/javascript">
                 $(document).ready(function(){
-                    var start_time =new Date("{xak:field.start_date function='MyDate('',@me)'/}");
-                    var end_time = new Date("{xak:field.end_date function='MyDate('',@me)'/}");
+                    var start_time =new Date("{xak:field.start_date function="MyDate('',@me)"/}");
+                    var end_time = new Date("{xak:field.end_date function="MyDate('',@me)"/}");
+                    var days = end_time.getDate() - start_time.getDate();
                     $('span#set_time').text(end_time.getDate() - start_time.getDate());
                 });
             </script>
@@ -75,13 +77,12 @@
                         <td>课程类型：{xak:field.id function='GetTopInfo(@me,0,0)'/}</td>
                     </tr>
                     <tr>
-                        <!--TODO-->
                         <td >课程时间：<span id="set_time"></span>天 </td>
                         <td>开课地区：{xak:field.location/}</td>
                     </tr>
                     <tr>
-                        <td>开课日期：{xak:field.start_date function='MyDate('',@me)'/}</td>
-                        <td>结束日期：{xak:field.end_date function='MyDate('',@me)'/}</td>
+                        <td>开课日期：{xak:field.start_date function="MyDate('Y-m-d',@me)"/}</td>
+                        <td>结束日期：{xak:field.end_date function="MyDate('Y-m-d',@me)"/}</td>
                     </tr>
                     <tr>
                         <td>联系机构：{xak:field.conntact_org/}</td>
@@ -96,7 +97,7 @@
                         <td>下班及周末联系电话：{xak:field.weekend_tel/}</td>
                     </tr>
                 </table>
-                <a href="/module/form.php?arcid={xak:field.aid/}"><img src="/images/common/lijibaoming.jpg" alt=""/></a>
+                <a href="/module/form.php?arcid={xak:field.aid/}&typeid={xak:field.typeid/}"><img src="/images/common/lijibaoming.jpg" alt=""/></a>
             </div>
 
             <div class="nnta">
@@ -111,7 +112,7 @@
                 <div class="jh">{xak:field.course_benefits/}</div>
                 <div class="shouz">课程概要</div>
                 <div class="jh">{xak:field.course_intro/}</div>
-                <div class="bm"><a href="#"><img src="/images/common/lijibaoming.jpg" alt=""/></a></div>
+                <div class="bm"><a href="/module/form.php?arcid={xak:field.aid/}&typeid={xak:field.typeid/}"><img src="/images/common/lijibaoming.jpg" alt=""/></a></div>
             </div>
             <div class="nnd"></div>
         </div>

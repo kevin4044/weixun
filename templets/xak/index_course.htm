@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>{xak:global.cfg_webname/}</title>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
     <meta name="description" content="{xak:global.cfg_description/}"/>
     <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
     <meta name="author" content="http://www.xak.cn"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
     <script type="text/javascript" src="/templets/style/js/common.js"></script>
 </head>
@@ -94,7 +95,7 @@
                     <td class="time">[field:start_date function=MyDate('y-m-d',@me)/]</td>
                     <td class="location">[field:location /]</td>
                     <td class="price">￥[field:price/]</td>
-                    <td class="opration"><a href="#"><img src="/images/common/ming.jpg" alt=""/></a></td>
+                    <td class="opration"><a href="/module/form.php?arcid=[field:id/]&typeid=1"><img src="/images/common/ming.jpg" alt=""/></a></td>
                 </tr>
                 {/xak:arclist}
                 </tbody>
@@ -131,7 +132,7 @@
                     <td class="time">[field:start_date function=MyDate('y-m-d',@me)/]</td>
                     <td class="location">[field:location /]</td>
                     <td class="price">￥[field:price/]</td>
-                    <td class="opration"><a href="#"><img src="/images/common/ming.jpg" alt=""/></a></td>
+                    <td class="opration"><a href="/module/form.php?arcid=[field:id/]&typeid=2"><img src="/images/common/ming.jpg" alt=""/></a></td>
                 </tr>
                 {/xak:arclist}
                 </tbody>
@@ -140,11 +141,6 @@
         </div>
 
         <div class="gongdi"></div>
-
-
-        <div class="KfMenu">
-            <div class="KfTop ie6_png"></div>
-        </div>
 
     </div>
 </div>

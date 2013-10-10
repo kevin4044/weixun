@@ -111,15 +111,16 @@ function OpenMyWinN(surl,w,h){
   </tr>
   <tr bgcolor="#F9FCFD">
     <td width="8%" align="center">选择</td>
-    <td width="25%" align="center">订单号</td>
+    <td width="15%" align="center">订单号</td>
+    <td align="center">状态</td>
     <td align="center">课程名</td>
     <td align="center">费用</td>
-    <td width="22%" align="center">生成日期</td>
+    <td  align="center">生成日期</td>
     <td align="center">负责人姓名</td>
     <td align="center">报名人数</td>
     <td align="center">负责人手机</td>
     <td align="center">负责人email</td>
-    <td align="center">公司名称</td>
+    <td width="15%" align="center">公司名称</td>
   </tr>
   <form name="form1">
 <?php
@@ -135,6 +136,9 @@ foreach( $blockValue as $key=>$fields )
 <input type='checkbox' name='aids' value='<?php echo $fields['oid']?>' class='np'></td>
       <td align="center">
         <?php echo $fields['oid'];?>
+      </td>
+      <td align="center">
+          <?php echo GetSta($fields['state']);?>
       </td>
       <td align="center">
         <a href="" ><?php echo $fields['name']?></a>

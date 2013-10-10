@@ -1,0 +1,1 @@
+<div class="moo"><a href="[field:typelink/]"><img src="/images/common/mmm.jpg" alt="" /></a></div>

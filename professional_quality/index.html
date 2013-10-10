@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>微训</title>
+    <title>企业内训  /  职业素养_微训</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content="http://www.xak.cn"/>
@@ -16,14 +16,14 @@
     <div class="maa">
         <ul>
             <li><a href="/">返回首页</a></li>
-            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.6','微训')">加入收藏</a></li>
+            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.10:9999','微训')">加入收藏</a></li>
         </ul>
     </div>
     <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
     <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
     <div class="menu">
         <ul>
-            <li class="cc"><a href="#">首页</a></li>
+            <li class="cc"><a href="/">首页</a></li>
             
             <li><a href="/public/">公开课程</a></li>
             
@@ -40,10 +40,31 @@
         </ul>
     </div>
 </div>
-
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            <strong><span style="color:#f20f0f;"><span style="font-size:16px;">0755-82731880</span></span></strong>
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
+</div>
 
 <div class="main">
-    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.6/'>首页</a> > <a href='/enterprice/'>企业内训</a> > <a href='/professional_quality/'>职业素养</a></div>
+    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.10:9999/'>首页</a> > <a href='/enterprice/'>企业内训</a> > <a href='/professional_quality/'>职业素养</a></div>
     <div class="leftt">
         <div class="gongkaike">
             <div class="shang">
@@ -99,7 +120,7 @@
             </form>
         </div>
         <div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
-        <div class="nn">
+        <div class="nn" style="border: none;">
             
             <div class="pages">
                 <ul>
@@ -110,13 +131,13 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                var $mqqfirst = $('div.mqq:first');
-                for ($mqqfirst; $mqqfirst.next().length>0; $mqqfirst = $mqqfirst.next()) {
-                    console.log($mqqfirst);
-                    console.log($mqqfirst.find('b'));
-                    $mqqfirst.find('b').text(
-                        get_state($mqqfirst.find('input[name=start_date]').attr('value')
-                              , $mqqfirst.find('input[name=end_date]').attr('value'))
+                var $mqqfirst = $('div.bao:first');
+                console.log($mqqfirst);
+                for (var $tmp = $mqqfirst; $tmp.length>0; $tmp = $tmp.next('div.bao')) {
+                    console.log($tmp);
+                    $tmp.find('span').text(
+                        get_state($tmp.find('input[name=start_date]').attr('value')
+                              , $tmp.find('input[name=end_date]').attr('value'))
                     );
                 }
             });
@@ -129,8 +150,7 @@
             <li><a href="/public/">公开课程</a></li>
             <li><a href="/enterprice/">企业内训</a></li>
             <li><a href="/personal/">个人微训</a></li>
-            <!--TODO:报名表单设置一个php，如有选择则XXX如果没有选择则所有未选-->
-            <li><a href="#">在线报名</a></li>
+            <li><a href="/jiangshihezuo/">在线报名</a></li>
             <li><a href="/teachers/">讲师风采</a></li>
             <li><a href="/hezuokehu/">典型客户</a></li>
             <li class="s"><a href="/conntact_us/">联系我们</a></li>

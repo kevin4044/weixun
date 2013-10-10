@@ -1,0 +1,32 @@
+<div class="leftt">
+    <div class="gongkaike">
+        <div class="shang">
+            <div class="kecheng">公开课程</div>
+        </div>
+        <div class="zhong">
+            <div class="kee">
+                <ul>
+                    {xak:channel typeid='1' getall='1' }
+                    <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                    {/xak:channel}
+                </ul>
+            </div>
+        </div>
+        <div class="di"></div>
+    </div>
+    <div class="jian">
+        <div class="ts">
+            <div class="kecheng">课程推荐</div>
+        </div>
+        <div class="tz">
+            <div class="mdd">
+                <ul>
+                    {xak:arclist typeid='1,2,3' flag='c' row='7' orderby='pubdate'}
+                    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/xak:arclist}
+                </ul>
+            </div>
+        </div>
+        <div class="td"></div>
+    </div>
+</div>

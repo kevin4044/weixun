@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>微训</title>
+    <title>非人的人选、育、用、留_微训</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content="http://www.xak.cn"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <link href="/templets/style/style.css" rel="stylesheet" media="screen" type="text/css"/>
     <script type="text/javascript" src="/templets/style/js/common.js"></script>
 </head>
@@ -15,14 +16,14 @@
     <div class="maa">
         <ul>
             <li><a href="/">返回首页</a></li>
-            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.6','微训')">加入收藏</a></li>
+            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.10:9999','微训')">加入收藏</a></li>
         </ul>
     </div>
     <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
     <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
     <div class="menu">
         <ul>
-            <li class="cc"><a href="#">首页</a></li>
+            <li class="cc"><a href="/">首页</a></li>
             
             <li><a href="/public/">公开课程</a></li>
             
@@ -39,10 +40,31 @@
         </ul>
     </div>
 </div>
-
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            <strong><span style="color:#f20f0f;"><span style="font-size:16px;">0755-82731880</span></span></strong>
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
+</div>
 
 <div class="main">
-    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.6/'>首页</a> > <a href='/public/'>公开课程</a> > <a href='/manufacture_manage/'>生产管理</a></div>
+    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.10:9999/'>首页</a> > <a href='/public/'>公开课程</a> > <a href='/manufacture_manage/'>生产管理</a></div>
     <div class="leftt">
         <div class="gongkaike">
             <div class="shang">
@@ -80,7 +102,13 @@
             <div class="tz">
                 <div class="mdd">
                     <ul>
-                        <li><a href="/manufacture_manage/1.html">非人的人选、育、用、留</a></li>
+                        <li><a href="/personal/34.html">优质客户服务与客户投诉</a></li>
+<li><a href="/personal/33.html">管理者的沟通与影响技术</a></li>
+<li><a href="/personal/32.html">沟通艺术与关系协调实战</a></li>
+<li><a href="/personal/20.html">高级工商管理研究生课程</a></li>
+<li><a href="/international_trade/19.html"> 国际贸易离岸业务操作技</a></li>
+<li><a href="/hr/18.html">研发团队建设：研发人员</a></li>
+<li><a href="/financial_manage/17.html">应收账款回收技巧及全面</a></li>
 
                     </ul>
                 </div>
@@ -102,8 +130,9 @@
             <div class="ti">非人的人选、育、用、留</div>
             <script type="text/javascript">
                 $(document).ready(function(){
-                    var start_time =new Date("1379054400");
-                    var end_time = new Date("1380177636");
+                    var start_time =new Date("2013-09-13 14:40:00");
+                    var end_time = new Date("2013-09-26 14:40:36");
+                    var days = end_time.getDate() - start_time.getDate();
                     $('span#set_time').text(end_time.getDate() - start_time.getDate());
                 });
             </script>
@@ -118,13 +147,12 @@
                         <td>课程类型：公开课程</td>
                     </tr>
                     <tr>
-                        <!--TODO-->
                         <td >课程时间：<span id="set_time"></span>天 </td>
                         <td>开课地区：北京</td>
                     </tr>
                     <tr>
-                        <td>开课日期：1379054400</td>
-                        <td>结束日期：1380177636</td>
+                        <td>开课日期：2013-09-13</td>
+                        <td>结束日期：2013-09-26</td>
                     </tr>
                     <tr>
                         <td>联系机构：上海石墩企业管理咨询中心</td>
@@ -139,7 +167,7 @@
                         <td>下班及周末联系电话：136666666</td>
                     </tr>
                 </table>
-                <a href="/module/form.php?arcid=1"><img src="/images/common/lijibaoming.jpg" alt=""/></a>
+                <a href="/module/form.php?arcid=1&typeid=7"><img src="/images/common/lijibaoming.jpg" alt=""/></a>
             </div>
 
             <div class="nnta">
@@ -212,7 +240,7 @@
 <div>
 	&nbsp;①头衔权 ②利益权 ③人事权④专业权 ⑤典范权</div>
 </div>
-                <div class="bm"><a href="#"><img src="/images/common/lijibaoming.jpg" alt=""/></a></div>
+                <div class="bm"><a href="/module/form.php?arcid=1&typeid=7"><img src="/images/common/lijibaoming.jpg" alt=""/></a></div>
             </div>
             <div class="nnd"></div>
         </div>
@@ -224,8 +252,7 @@
             <li><a href="/public/">公开课程</a></li>
             <li><a href="/enterprice/">企业内训</a></li>
             <li><a href="/personal/">个人微训</a></li>
-            <!--TODO:报名表单设置一个php，如有选择则XXX如果没有选择则所有未选-->
-            <li><a href="#">在线报名</a></li>
+            <li><a href="/jiangshihezuo/">在线报名</a></li>
             <li><a href="/teachers/">讲师风采</a></li>
             <li><a href="/hezuokehu/">典型客户</a></li>
             <li class="s"><a href="/conntact_us/">联系我们</a></li>

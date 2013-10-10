@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>微训</title>
+    <title>公开课程  /  国际贸易_微训</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content="http://www.xak.cn"/>
@@ -16,14 +16,14 @@
     <div class="maa">
         <ul>
             <li><a href="/">返回首页</a></li>
-            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.6','微训')">加入收藏</a></li>
+            <li class="aa"><a href="javascript:window.external.AddFavorite('http://127.0.0.10:9999','微训')">加入收藏</a></li>
         </ul>
     </div>
     <div class="logo"><a href="/"><img src="/images/common/logo.jpg" alt="" /></a></div>
     <div class="pic"><img src="/images/common/toupic.jpg" alt="" /></div>
     <div class="menu">
         <ul>
-            <li class="cc"><a href="#">首页</a></li>
+            <li class="cc"><a href="/">首页</a></li>
             
             <li><a href="/public/">公开课程</a></li>
             
@@ -40,10 +40,31 @@
         </ul>
     </div>
 </div>
-
+<div class="kf_container">
+    <div class="KfMenu">
+        <div class="kf_content">
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+            <a href="">
+                <p class="kf_click">市场部XX</p>
+            </a>
+        </div>
+        <p class="kf_tel">
+            <strong><span style="color:#f20f0f;"><span style="font-size:16px;">0755-82731880</span></span></strong>
+        </p>
+        <div class="KfTop ie6_png">
+        </div>
+    </div>
+    <div class="f-click" onclick="kf_toggle();">
+    </div>
+</div>
 
 <div class="main">
-    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.6/'>首页</a> > <a href='/public/'>公开课程</a> > <a href='/international_trade/'>国际贸易</a></div>
+    <div class="weizhi">您现在所在外置：<a href='http://127.0.0.10:9999/'>首页</a> > <a href='/public/'>公开课程</a> > <a href='/international_trade/'>国际贸易</a></div>
     <div class="leftt">
         <div class="gongkaike">
             <div class="shang">
@@ -99,24 +120,55 @@
             </form>
         </div>
         <div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
-        <div class="nn">
-            
+        <div class="nn" style="border: none;">
+            <div class="bao">
+                <div class="ttt"><a href="/international_trade/13.html">讲师：金成坤 《国际贸易运作实务高级研修班》</a></div>
+                <div class="kais"></div>
+                <div class="kaiz">
+                    <!--todo:this is abusolutly a rubbish-->
+                    <div class="mqq">
+                        <div class='t-course'>
+                            <div class="t-time">开课时间：2013-10-09 15:04:43</div>
+                            <div class="t-location">开课地点：深圳，北京，上海</div>
+                            <div class="t-price">课程价格：￥10000元</div>
+                        </div>
+                        <div class="t-course">
+                            <div class="t-target">课程目标：通过2天的严谨而轻松的案例教学以及紧密联系当前政治经济形势，受众学员将</div>
+                            <div class="t-status">
+                                状  态：
+                                <span >
+                                </span>
+                            </div>
+                        </div>
+                        <input type="hidden" name='start_date' value="2013-10-09 15:04:43"/>
+                        <input type="hidden" name='end_date' value="2013-10-24 15:04:00"/>
+                    </div>
+                    <div class="mingg">
+                        <a href="/module/form.php?arcid=13&typeid=12">
+                            <img src="/images/common/lijibaoming.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="kaid">
+                </div>
+            </div>
+
             <div class="pages">
                 <ul>
-                    <li><span class="pageinfo">共 <strong>0</strong>页<strong>0</strong>条记录</span></li>
+                    <li><span class="pageinfo">共 <strong>1</strong>页<strong>1</strong>条记录</span></li>
 
                 </ul>
             </div>
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                var $mqqfirst = $('div.mqq:first');
-                for ($mqqfirst; $mqqfirst.next().length>0; $mqqfirst = $mqqfirst.next()) {
-                    console.log($mqqfirst);
-                    console.log($mqqfirst.find('b'));
-                    $mqqfirst.find('b').text(
-                        get_state($mqqfirst.find('input[name=start_date]').attr('value')
-                              , $mqqfirst.find('input[name=end_date]').attr('value'))
+                var $mqqfirst = $('div.bao:first');
+                console.log($mqqfirst);
+                for (var $tmp = $mqqfirst; $tmp.length>0; $tmp = $tmp.next('div.bao')) {
+                    console.log($tmp);
+                    $tmp.find('span').text(
+                        get_state($tmp.find('input[name=start_date]').attr('value')
+                              , $tmp.find('input[name=end_date]').attr('value'))
                     );
                 }
             });
@@ -129,8 +181,7 @@
             <li><a href="/public/">公开课程</a></li>
             <li><a href="/enterprice/">企业内训</a></li>
             <li><a href="/personal/">个人微训</a></li>
-            <!--TODO:报名表单设置一个php，如有选择则XXX如果没有选择则所有未选-->
-            <li><a href="#">在线报名</a></li>
+            <li><a href="/jiangshihezuo/">在线报名</a></li>
             <li><a href="/teachers/">讲师风采</a></li>
             <li><a href="/hezuokehu/">典型客户</a></li>
             <li class="s"><a href="/conntact_us/">联系我们</a></li>

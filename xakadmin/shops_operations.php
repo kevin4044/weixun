@@ -52,12 +52,14 @@ if(isset($dopost))
         $nids = explode('`', $nid);
         foreach($nids as $n)
         {
-            $query = "DELETE FROM `#@__shops_products` WHERE oid='$n'";
+            $query = "DELETE FROM `#@__shop_enterprise` WHERE oid='$n'";
             $query2 = "DELETE FROM `#@__shops_orders` WHERE oid='$n'";
-            $query3 = "DELETE FROM `#@__shops_userinfo` WHERE oid='$n'";
+            $query3 = "DELETE FROM `#@__shop_personal` WHERE oid='$n'";
+            $query4 = "DELETE FROM `#@__shop_public` WHERE oid='$n'";
             $dsql->ExecuteNoneQuery($query);
             $dsql->ExecuteNoneQuery($query2);
             $dsql->ExecuteNoneQuery($query3);
+            $dsql->ExecuteNoneQuery($query4);
         }
         ShowMsg("成功删除指定的订单记录！",$ENV_GOBACK_URL);
         exit();
@@ -88,17 +90,17 @@ if(isset($sta))
 if ($id==1 || !isset($id)) {
     $sql = "SELECT s.`oid`,s.`name`,s.`price`,s.`people_count`,s.`stime`,s.priceCount,
     s.dprice,s.paytype,p.client_name,p.client_email, p.client_tel,p.client_mobile,p.co_name,p.co_tel,p.co_fax,p.co_addr,p.content
-     FROM #@__shops_orders AS s LEFT JOIN #@__shop_public AS p ON s.oid=p.oid $addsql ORDER BY `stime` DESC";
+     FROM #@__shops_orders AS s JOIN #@__shop_public AS p on s.oid=p.oid $addsql ORDER BY `stime` DESC";
     $tplfile = XAKADMIN."/templets/shops_operations.htm";
 } else if ($id==2) {
     $sql = "SELECT s.`oid`,s.`name`,s.`people_count`,s.`stime`
     ,p.days, p.date,p.expect,p.co_info,p.job,p.co_name,p.co_tel,p.email,p.co_addr,p.postcode
-     FROM #@__shops_orders AS s LEFT JOIN #@__shop_enterprise AS p where s.oid=p.oid $addsql ORDER BY `stime` DESC";
+     FROM #@__shops_orders AS s JOIN #@__shop_enterprise AS p on s.oid=p.oid $addsql ORDER BY `stime` DESC";
     $tplfile = XAKADMIN."/templets/shops_op_enterprise.htm";
 } else if ($id==3) {
-    $sql = "SELECT s.`oid`,s.`name`,s.`people_count`,s.`stime`
-    ,p.tel, p.email,p.content
-     FROM #@__shops_orders AS s LEFT JOIN #@__shop_personal AS p where s.oid=p.oid $addsql ORDER BY `stime` DESC";
+    $sql = "SELECT s.`oid`,s.`name`,s.`people_count`,s.`stime`,s.price
+    ,p.client_name,p.tel, p.email,p.content
+     FROM #@__shops_orders AS s JOIN #@__shop_personal AS p on s.oid=p.oid $addsql ORDER BY `stime` DESC";
     $tplfile = XAKADMIN."/templets/shops_op_personal.htm";
 } else {
     exit("unexpected id");

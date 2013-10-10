@@ -40,7 +40,10 @@
      	
       <div id='xys' class="nn">
         <div class="nntt">
-           <div class="baoo">提交报名</div>
+           <div class="baoo">许愿</div>
+            <div style="float: right;line-height:32px;margin-right: 20px;cursor: pointer;color: white" onclick="$('#xys').toggle();">
+                关闭
+            </div>
         </div>
         <div class="nnz">
         <!--TODO:regular expression-->
@@ -76,8 +79,8 @@ function CheckForm()
     alert("请输入验证码!");
 	document.myform.vdcode.focus();
 	return false;
-  } 
-  $('xys').hide();
+  }
+    $('#xys').hide();
 }
 </script>
 
@@ -201,7 +204,7 @@ function CheckForm()
                         <tr>
                             <td width="15%">&nbsp;</td>
                             <td>
-                                <input class="submit" type="submit" value="提 交" name="submitsure"> 
+                                <input class="submit" type="submit" value="" name="submitsure">
                             </td>
                         </tr>
                     </table>

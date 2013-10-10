@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'/>
-    <title>{xak:global.cfg_webname/}</title>
+    <title>{xak:field.title/}_{xak:global.cfg_webname/}</title>
     <meta name="description" content="{xak:global.cfg_description/}"/>
     <meta name="keywords" content="{xak:global.cfg_keywords/}"/>
     <meta name="author" content="http://www.xak.cn"/>
@@ -57,26 +57,32 @@
             </form>
         </div>
         <div class="nd"><img src="/images/common/hao.jpg" alt=""/></div>
-        <div class="nn">
+        <div class="nn" style="border: none;">
             {xak:arclist row='7' orderby='weight' addfields='teacher,target,price,name,start_date,end_date,location' channelid='14'}
             <div class="bao">
                 <div class="ttt"><a href="[field:arcurl/]">讲师：[field:teacher/] 《[field:name/]》</a></div>
                 <div class="kais"></div>
                 <div class="kaiz">
+                    <!--todo:this is abusolutly a rubbish-->
                     <div class="mqq">
-                        <ul>开课时间：[field:start_date function=MyDate('',@me)/]</ul>
-                        <dl>开课地点：[field:location/]</dl>
-                        <dt>课程价格：￥[field:price/]元</dt>
-                        <br/>
-                        <dd>课程目标：[field:target/]</dd>
-                        <span >状  态：
-                            <b></b>
-                        </span>
+                        <div class='t-course'>
+                            <div class="t-time">开课时间：[field:start_date function=MyDate('',@me)/]</div>
+                            <div class="t-location">开课地点：[field:location/]</div>
+                            <div class="t-price">课程价格：￥[field:price/]元</div>
+                        </div>
+                        <div class="t-course">
+                            <div class="t-target">课程目标：[field:target function='cn_substrR(html2text(@me),100)'/]</div>
+                            <div class="t-status">
+                                状  态：
+                                <span >
+                                </span>
+                            </div>
+                        </div>
                         <input type="hidden" name='start_date' value="[field:start_date function=MyDate('',@me)/]"/>
                         <input type="hidden" name='end_date' value="[field:end_date function=MyDate('',@me)/]"/>
                     </div>
                     <div class="mingg">
-                        <a href="">
+                        <a href="/module/form.php?arcid=[field:id/]&typeid=[field:typeid/]">
                             <img src="/images/common/lijibaoming.jpg" alt=""/>
                         </a>
                     </div>
@@ -93,13 +99,13 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-                var $mqqfirst = $('div.mqq:first');
-                for ($mqqfirst; $mqqfirst.next().length>0; $mqqfirst = $mqqfirst.next()) {
-                    console.log($mqqfirst);
-                    console.log($mqqfirst.find('b'));
-                    $mqqfirst.find('b').text(
-                        get_state($mqqfirst.find('input[name=start_date]').attr('value')
-                              , $mqqfirst.find('input[name=end_date]').attr('value'))
+                var $mqqfirst = $('div.bao:first');
+                console.log($mqqfirst);
+                for (var $tmp = $mqqfirst; $tmp.length>0; $tmp = $tmp.next('div.bao')) {
+                    console.log($tmp);
+                    $tmp.find('span').text(
+                        get_state($tmp.find('input[name=start_date]').attr('value')
+                              , $tmp.find('input[name=end_date]').attr('value'))
                     );
                 }
             });

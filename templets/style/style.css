@@ -458,10 +458,10 @@ table.m-course-info td {
     white-space: nowrap;
 }
 .m-mee .name {
-    width: 41.2%;
+    width: 51.2%;
 }
 .m-mee .time {
-    width: 26.8%;
+    width: 16.8%;
 }
 .m-mee .location {
     width: 22.6%;
@@ -694,7 +694,7 @@ table.m-course-info td {
 	
 .moo{
 	width:22px;
-	height:8px;
+	height:30px;
 	float:right;
 	overflow:hidden;
 	margin-top:23px;
@@ -1037,55 +1037,50 @@ table.m-course-info td {
 	overflow:hidden;
 	height:4px;
 	background:url(/images/common/baomingd.jpg) no-repeat;}
-	
-	
+
 .mqq{
 	width:550px;
 	float:left;
 	margin-left:15px;
 	display:inline;
 	overflow:hidden;}	
-	
-.mqq ul{
-	height:35px;
-	line-height:35px;
-	float:left;margin-left:25px;
-	font-size:13px;
-	display:inline;
-	overflow:hidden;}
-.mqq dl{
-	height:35px;
-	line-height:35px;
-	margin-left:45px;
-	display:inline;
-	float:left;font-size:13px;
-	overflow:hidden;}	
-	
-	
-.mqq dt{
-	height:35px;
-	line-height:35px;
-	float:right;margin-left:35px;font-size:13px;
-	display:inline;
-	overflow:hidden;}	
-	
-.mqq dd{
-	height:35px;
-	line-height:35px;font-size:13px;
-	float:left;margin-left:25px;
-	display:inline;
-	overflow:hidden;}
+
+.t-course {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+.t-course div {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 12px;
+    height: 100%;
+}
+.t-course .t-time {
+    width: 40%;
+}
+.t-course .t-location {
+    width: 34%;
+}
+.t-course .t-price {
+    width: 24%;
+}
+.t-course .t-target {
+    width: 78%;
+}
+.t-course .t-status {
+    text-align: center;
+    width: 20%;
+    line-height: 35px;
+    font-size: 13px;
+}
+
 .mqq span{
-	height:35px;
 	line-height:35px;font-size:13px;
-margin-left:230px;
-	display:inline;
-	overflow:hidden;}
-	
-.mqq span b{
-	color:#F90;
-	font-weight:normal;}	
-	
+    color:#F90;
+    font-weight:normal;}
+
+
 .mingg{
 	width:89px;
 	height:29px;
@@ -1432,14 +1427,21 @@ margin-left:230px;
 	height:35px;
 	background:url(/images/common/xuyuanshudi.jpg) no-repeat;}
 	
-.KfMenu{position: fixed;
-       width: 167px;
+.kf_container {position: fixed;
+       width: 169px;
        overflow: hidden;
 	   height:282px;
        right: 10px;
        top: 180px;
        z-index: 9999999;
-        background: url(/images/common/hhhh.jpg) no-repeat}
+}
+.KfMenu {
+    float: right;
+    width: 139px;
+    overflow: hidden;
+    height:282px;
+    background: url(/images/common/kf.gif) no-repeat;
+}
 
 
 .KfMenu .KfTop {
@@ -1482,7 +1484,7 @@ background: url(/images/common/kf/kf_top.png) no-repeat;
     border-color:#FF6600;
     font-weight:bold;}
 
-div.f-click {
+.xys div.f-click {
 	position: absolute;
 	height: 70px;
 	width: 70px;
@@ -1540,4 +1542,45 @@ div.pay_window p {
 }
 div.pay_window input {
     margin-left: 80px;
+}
+
+div.kf_content {
+    margin-top: 47px;
+    margin-left: 40px;
+    margin-right:13px;
+    height: 140px;
+}
+.kf_click {
+    padding-left: 10px;
+    font-size: 15px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.kf_container .f-click {
+    margin-top: 62px;
+    float: right;
+    width: 27px;
+    height: 113px;
+    background-image: url(/images/common/kf_side.gif);
+}
+.KfMenu .kf_tel {
+    margin-top: 50px;
+    padding-left: 7px;
+}
+.op_li {
+    float: left;
+    margin-left: 30px;
+    width: 148px;
+    height: 92px;
+}
+.op_li img {
+    width: 100%;
+    height: 62px;
+    border: 1px solid #dbdbdb;
+}
+.op_li p {
+    text-align: center;
+    font-size: 14px;
+    line-height:14px ;
 }
